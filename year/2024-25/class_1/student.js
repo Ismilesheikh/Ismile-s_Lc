@@ -1,6 +1,6 @@
 let SHEET_ID = '1Dsnmnh58z9i0_vYdkzWgLAEeLfTFQcFowgHP7f90ZL0'
 let SHEET_TITLE = 'Class-X';
-let SHEET_RANGE = 'C12:H30';
+let SHEET_RANGE = 'C7:H30';
 
 let FULL_URL = ('https://docs.google.com/spreadsheets/d/' + SHEET_ID + '/gviz/tq?sheet=' + SHEET_TITLE + '&range=' + SHEET_RANGE);
 
@@ -15,7 +15,6 @@ fetch(FULL_URL)
     let age2 = document.getElementById('age2');
     let length = data.table.rows.length;
 
-    console.log(data.table.rows);
  
   
 
