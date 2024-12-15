@@ -1,9 +1,14 @@
-button{width: 40%;
-    height: 40px;
-    margin-left: 5%;
-    margin-right: 5%;
+
+table{width: 100%;}
+tr{width: 98%;}
+td{width: 49%;}
+
+
+button{width: 90%;
     margin-top: 10px;
-    font-size: 25px;
+    margin-left: 5%;
+    height: 80px;
+    font-size: 45px;
     color: rgb(248, 9, 160);
     font-style: oblique;
     font-weight: bolder;
@@ -17,6 +22,8 @@ button:hover{border: 3px solid rgb(55, 236, 55);
 color: rgb(145, 238, 102);}
 
 .ctitle{text-align: center;
-    color: blueviolet;
-font-size: 25px;
-font-weight: bold;}
+    color: rgb(189, 111, 9);
+    font-size: 35px;
+    font-style: italic;
+    text-decoration: underline;
+    font-weight: bolder;}
