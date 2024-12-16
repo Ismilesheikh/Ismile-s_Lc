@@ -24,5 +24,12 @@ getUsers().then(data => {
 
   const name1 = document.getElementById('name1');
 
+  const pname1 = document.getElementById('pname1');
+  
+
+
   name1.innerHTML = data[5].D;
+  pname1.innerHTML = data[6].D;
+  document.getElementById('dob1').innerHTML = data[7].D;
+
 });
