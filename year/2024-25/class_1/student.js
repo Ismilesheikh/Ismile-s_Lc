@@ -22,7 +22,7 @@ async function getUsers() {
 getUsers().then(data => {
   console.log(data);
 
-  const preElement = document.getElementById('name');
+  const name1 = document.getElementById('name1');
 
-  preElement.innerHTML = data[0].D;
+  name1.innerHTML = data[0].D;
 });
