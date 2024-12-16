@@ -1,14 +1,24 @@
-button{width: 90%;
-    height: 40px;
-    margin-left: 5%;
-    margin-right: 5%;
+
+body{background-color: rgb(243, 239, 237);}
+table{width: 100%;}
+
+tr{width: 100%;}
+td{width: 50%;}
+
+
+
+
+button{width:91%;
+    height: 100px;
+    margin-left:3%;
     margin-top: 10px;
-    font-size: 25px;
-    color: rgb(248, 9, 160);
+    font-size: 35px;
+    color: rgb(247, 121, 3);
     font-style: oblique;
     font-weight: bolder;
     border: none;
-    box-shadow: 2px 2px 2px 2px grey;
+    border-radius: 10px;
+    box-shadow: 3px 3px 3px 3px grey;
     background-image: radial-gradient( circle 1292px at -13.6% 51.7%,  rgba(0,56,68,1) 0%, rgba(163,217,185,1) 51.5%, rgba(255,252,247,1) 88.6% );
 }
 
