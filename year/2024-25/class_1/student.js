@@ -31,16 +31,16 @@ getUsers().then(data => {
   name1.innerHTML = data[5].D;
   pname1.innerHTML = data[6].D;
   document.getElementById('dob1').innerHTML = data[7].D;
-  document.getElementById('mno1').innerHTML = data[7].D;
-  document.getElementById('class1').innerHTML = data[7].D;
-  document.getElementById('sec1').innerHTML = data[7].D;
-  document.getElementById('rate1').innerHTML = data[7].D;
+  document.getElementById('mno1').innerHTML = data[8].D;
+  document.getElementById('class1').innerHTML = data[9].D;
+  document.getElementById('sec1').innerHTML = data[10].D;
+  document.getElementById('rate1').innerHTML = data[11].D;
   document.getElementById('sdate1').innerHTML = data[13].C;
   document.getElementById('today1').innerHTML = data[13].D;
   document.getElementById('tmonths1').innerHTML = data[13].E
   document.getElementById('days1').innerHTML = data[13].F;
   document.getElementById('tpaid1').innerHTML = data[13].G;
-  document.getElementById('due1').innerHTML = data[13].D;
+  document.getElementById('due1').innerHTML = data[13].H;
   
 
 });
