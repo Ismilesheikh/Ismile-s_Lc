@@ -24,5 +24,5 @@ getUsers().then(data => {
 
   const name1 = document.getElementById('name1');
 
-  name1.innerHTML = data[0].D;
+  name1.innerHTML = data[5].D;
 });
