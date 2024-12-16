@@ -1,18 +1,28 @@
+async function getUsers() {
+  try {
+    const response = await fetch(
+      'https://script.google.com/macros/s/AKfycbyQj2Rp14Pcm0C-kzRipEO62r2OpeAhfHHwebMSSXSG8R1dJhGCt5FqpQOWHuhZt0ft/exec',
+      {
+        method: 'GET',
+      },
+    );
 
-$(document).ready(function() {
-    function update_data() {
-        $.getJSON("https://example.com/example.json", function(Data) {
-                    
-            // Example 1
-            document.getElementById('name1').innerHTML = Data.example1;
-                            
-            // Example 2
-            document.getElementById('example2').innerHTML = Data.example2;
-                    
-            // Example 3
-            document.getElementById('example3').innerHTML = Data.example3;
-        });
+    if (!response.ok) {
+      throw new Error(`Error! status: ${response.status}`);
     }
-update_data();
-setInterval(update_data, '30000');
+
+    const data = await response.json();
+
+    return data;
+  } catch (error) {
+    console.log(error);
+  }
+}
+
+getUsers().then(data => {
+  console.log(data);
+
+  const preElement = document.getElementById('name');
+
+  preElement.innerHTML = data[0].are;
 });
