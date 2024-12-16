@@ -17,10 +17,10 @@ margin-left: 10px;}
 #text1{width:70%;}
 
 .table_3{width: 100%;
-    text-align: center;
+    text-align: left;
     margin-top: 10px;
          }
-.third{display: inline-flex;
+.third{display: inline;
 width: 98%;}
 
 .table_4{width: 98%;
