@@ -28,7 +28,7 @@ getUsers().then(data => {
   
 
 
-  name1.innerHTML = data[5].D;
+  name1.innerHTML =data[5].D;
   pname1.innerHTML = data[6].D;
   document.getElementById('dob1').innerHTML =data[7].D;
   document.getElementById('mno1').innerHTML = data[8].D;
