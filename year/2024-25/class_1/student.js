@@ -1,7 +1,7 @@
 async function getUsers() {
   try {
     const response = await fetch(
-      'https://script.google.com/macros/s/AKfycbxhLd4CLI8g1Kr9E-rew-PeVUOq9VPUTkd0ZnqS7K-nrNvxps4NxEyQLB74yIoCHWKi/exec',
+      'https://script.google.com/macros/s/AKfycbwXfG04KKDbgq_2Kq287Rh2ijmJicqKYZv5JrUJA2mJnaUZfjMATxecDZaADo9e1WOR/exec',
       {
         method: 'GET',
       },
@@ -41,6 +41,24 @@ getUsers().then(data => {
   document.getElementById('days1').innerHTML = data[13].F;
   document.getElementById('tpaid1').innerHTML = data[13].G;
   document.getElementById('due1').innerHTML = data[13].H;
+  document.getElementById('due1').innerHTML = data[13].H;
+
+  document.getElementById('pdate11').innerHTML = data[16].D;
+  document.getElementById('pamount11').innerHTML = data[16].E;
+
+  document.getElementById('pdate21').innerHTML = data[17].D;
+  document.getElementById('pamount21').innerHTML = data[17].E;
+
+  document.getElementById('pdate31').innerHTML = data[18].D;
+  document.getElementById('pamount31').innerHTML = data[18].E;
+
+  document.getElementById('pdate41').innerHTML = data[19].D;
+  document.getElementById('pamount41').innerHTML = data[19].E;
+
+  document.getElementById('pdate51').innerHTML = data[20].D;
+  document.getElementById('pamount51').innerHTML = data[20].E;
   
+  document.getElementById('pdate61').innerHTML = data[21].D;
+  document.getElementById('pamount61').innerHTML = data[21].E;
 
 });
