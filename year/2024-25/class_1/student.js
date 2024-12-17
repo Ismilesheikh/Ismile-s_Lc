@@ -30,7 +30,7 @@ getUsers().then(data => {
 
   name1.innerHTML = data[5].D;
   pname1.innerHTML = data[6].D;
-  document.getElementById('dob1').innerHTML = data[7].D;
+  document.getElementById('dob1').innerHTML =data[7].D;
   document.getElementById('mno1').innerHTML = data[8].D;
   document.getElementById('class1').innerHTML = data[9].D;
   document.getElementById('sec1').innerHTML = data[10].D;
@@ -57,7 +57,7 @@ getUsers().then(data => {
 
   document.getElementById('pdate51').innerHTML = data[20].D;
   document.getElementById('pamount51').innerHTML = data[20].E;
-  
+
   document.getElementById('pdate61').innerHTML = data[21].D;
   document.getElementById('pamount61').innerHTML = data[21].E;
 
