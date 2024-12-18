@@ -39,9 +39,9 @@ getUsers().then(data => {
   document.getElementById('today1').innerHTML = data[13].D;
   document.getElementById('tmonths1').innerHTML = data[13].E
   document.getElementById('days1').innerHTML = data[13].F;
-  document.getElementById('tpaid1').innerHTML = data[13].G;
-  document.getElementById('due1').innerHTML = data[13].H;
-  document.getElementById('due1').innerHTML = data[13].H;
+document.getElementById('tamount1').innerHTML = data[13].G;
+  document.getElementById('tpaid1').innerHTML = data[13].H;
+  document.getElementById('due1').innerHTML = data[13].I;
 
   document.getElementById('pdate11').innerHTML = data[16].D;
   document.getElementById('pamount11').innerHTML = data[16].E;
