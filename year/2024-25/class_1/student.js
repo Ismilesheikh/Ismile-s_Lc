@@ -75,7 +75,7 @@ document.getElementById('button1').addEventListener('click', function(){
   }
 
   else{
-if(password ==='';){
+if(Password ==='';){
 document.getElementById("alert").innerHTML="Enter Password";}
    else{document.getElementById("alert").innerHTML="Enter Correct Password";}
 
