@@ -27,21 +27,7 @@ getUsers().then(data => {
   const name1 = document.getElementById('name1');
 
   const pname1 = document.getElementById('pname1');
-
-document.getElementById('button1').addEventListener('click', function(){
-let correctPassword ="Ismile";
-let Password=document.getElementById("psw").value;
-if(correctPassword===Password){
-    document.getElementById("students").style.display="block";
-    document.getElementById("validate").style.display="none";
-}
-else{alert("enter correct password");}
-
-
-});
   
-
-
   name1.innerHTML =data[5].D;
   pname1.innerHTML = data[6].D;
   document.getElementById('dob1').innerHTML =data[7].D;
@@ -76,3 +62,16 @@ document.getElementById('tamount1').innerHTML = data[13].G;
   document.getElementById('pamount61').innerHTML = data[21].E;
 
 });
+
+document.getElementById('button1').addEventListener('click', function(){
+  let correctPassword ="Ismile";
+  let Password = document.getElementById("psw").value;
+  if(correctPassword===Password){
+      document.getElementById("students").style.display="block";
+      document.getElementById("validate").style.display="none";
+  }
+
+  else{alert("enter correct password");}
+  
+  
+  });
