@@ -1,5 +1,5 @@
 //Password Protected 
-function fun(){
+document.getElementById('button1').addEventListener('click', function(){
 let correctPassword ="Ismile";
 let Password=document.getElementById("psw").value;
 if(correctPassword===Password){
@@ -9,7 +9,7 @@ if(correctPassword===Password){
 else{alert("enter correct password");}
 
 
-};
+});
 
 //code for Google sheets 
 
