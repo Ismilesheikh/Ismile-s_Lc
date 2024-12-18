@@ -1,9 +1,9 @@
 
-form{width: 60%;
+form{width: 80%;
      height: 100px;
      border-radius: 10px;
      margin-top: 30%;
-     margin-left: 20%;
+     margin-left: 10%;
     box-shadow: 2px 2px 2px 2px darkgray;}
 
     input{width: 80%;
@@ -14,8 +14,8 @@ form{width: 60%;
         box-shadow: 2px 2px 2px 2px darkgray;
         font-size:20px ;}
 
-        #button1{width: 30%;
-            font-size: 25px;
+        #button1{width: 40%;
+            font-size: 20px;
             border-radius: 5px;
             font-weight: bold;
             margin-left: 35%;
