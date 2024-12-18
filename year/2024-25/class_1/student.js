@@ -9,7 +9,7 @@ if(correctPassword===Password){
 else{alert("enter correct password");}
 
 
-}
+};
 
 //code for Google sheets 
 
