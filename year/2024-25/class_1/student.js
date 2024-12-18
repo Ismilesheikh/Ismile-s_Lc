@@ -71,7 +71,8 @@ document.getElementById('button1').addEventListener('click', function(){
       document.getElementById("validate").style.display="none";
   }
 
-  else{alert("enter correct password");}
+  else{document.getElementById("alert").innerHTML="Enter Correct Password";}
+
   
   
   });
