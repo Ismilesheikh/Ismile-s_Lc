@@ -1,17 +1,4 @@
-//Password Protected 
-document.getElementById('button1').addEventListener('click', function(){
-let correctPassword ="Ismile";
-let Password=document.getElementById("psw").value;
-if(correctPassword===Password){
-    document.getElementById("students").style.display="block";
-    document.getElementById("validate").style.display="none";
-}
-else{alert("enter correct password");}
 
-
-});
-
-//code for Google sheets 
 
 async function getUsers() {
   try {
@@ -40,6 +27,18 @@ getUsers().then(data => {
   const name1 = document.getElementById('name1');
 
   const pname1 = document.getElementById('pname1');
+
+document.getElementById('button1').addEventListener('click', function(){
+let correctPassword ="Ismile";
+let Password=document.getElementById("psw").value;
+if(correctPassword===Password){
+    document.getElementById("students").style.display="block";
+    document.getElementById("validate").style.display="none";
+}
+else{alert("enter correct password");}
+
+
+});
   
 
 
