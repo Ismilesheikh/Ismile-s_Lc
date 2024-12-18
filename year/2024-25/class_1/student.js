@@ -61,6 +61,9 @@ document.getElementById('tamount1').innerHTML = data[13].G;
   document.getElementById('pdate61').innerHTML = data[21].D;
   document.getElementById('pamount61').innerHTML = data[21].E;
 
+document.getElementById('pdate71').innerHTML = data[22].D;
+  document.getElementById('pamount71').innerHTML = data[22].E;
+
 });
 
 document.getElementById('button1').addEventListener('click', function(){
