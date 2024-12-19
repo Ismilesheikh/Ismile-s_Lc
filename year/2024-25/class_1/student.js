@@ -22,7 +22,6 @@ async function getUsers() {
 }
 
 getUsers().then(data => {
-  console.log(data);
 
 document.getElementById('welcome').innerHTML =data[5].D;
   const name1 = document.getElementById('name1');

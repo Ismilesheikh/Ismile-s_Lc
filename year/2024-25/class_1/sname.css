@@ -2,9 +2,19 @@
 form{width: 80%;
      height: 180px;
      border-radius: 10px;
+     border: 1px solid darkgrey;
      margin-top: 30%;
      margin-left: 10%;
-    box-shadow: 2px 2px 2px 2px darkgray;}
+    box-shadow: 2px 2px 2px 2px darkgray;
+    animation: anime1 2s infinite;}
+
+    @keyframes anime1 {
+        0%{border-top: 2px solid green;}
+        33%{border-right: 2px solid rgb(196, 105, 21);}
+        66%{border-bottom: 2px solid rgb(129, 24, 98);}
+        99%{border-left: 2px solid rgb(11, 154, 173);}
+        
+    }
 .hi p{
     font-weight:bold;
     width:100%;
