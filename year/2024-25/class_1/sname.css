@@ -53,15 +53,31 @@ margin-top: 5px;}
 h1{text-align: center;
     color: rgb(16, 201, 201);
 text-decoration: underline;}
+
 .detail{display: inline;
     width: 100%;
 margin-bottom: 10px;}
+
 table,td,tr{border: 1px solid black;
             font-weight: bold;
-        box-shadow: 2px 2px 2px 2px darkgray;}
+        box-shadow: 1px 1px 1px 1px darkgray;}
+
 .first{float: left;
-margin-left: 10px;
+margin-left: 2px;
 margin-bottom: 10px;}
+
+#pic1{border: none;
+    box-shadow: none;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 100%;}
+.pic1{border:none;}
+img{width: 92%;
+    margin: 3%;
+    border:1px solid darkgrey ;
+    box-shadow: 2px 2px 2px 2px rgb(143, 142, 139);
+    border-radius: 200%;}
+
 
 .fake{height: 20px;}
 
