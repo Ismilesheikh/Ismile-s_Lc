@@ -7,6 +7,7 @@ form{width: 80%;
     box-shadow: 2px 2px 2px 2px darkgray;}
 .hi p{display:inline-flex;
     font-weight:bold;
+    width:100%;
     text-align:center;
     margin:5px;
    color:green;
