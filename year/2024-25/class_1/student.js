@@ -74,8 +74,12 @@ document.getElementById('button1').addEventListener('click', function(){
       document.getElementById("validate").style.display="none";
   }
 
-   else{document.getElementById("alert").innerHTML="Enter Correct Password";}
+   else{if(Password=== "7563876753"){
+    document.getElementById("students").style.display="block";
+    document.getElementById("validate").style.display="none";
+   }
 
-  
-  
+   else{document.getElementById("alert").innerHTML="Enter Correct Password";}
+  }
+
   });
