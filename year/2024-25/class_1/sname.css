@@ -7,6 +7,9 @@ form{width: 80%;
     box-shadow: 2px 2px 2px 2px darkgray;}
 .hi{display:flex;
     font-weight:bold;
+    text-align:center;
+    margin:5px;
+   color:green;
       }
     input{width: 80%;
         margin-left: 10%;
