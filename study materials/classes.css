@@ -1,0 +1,27 @@
+body{background-color: rgb(243, 239, 237);}
+table{width: 100%;}
+
+tr{width: 100%;}
+td{width: 50%;}
+
+button{width:91%;
+    height: 100px;
+    margin-left:3%;
+    margin-top: 10px;
+    font-size: 45px;
+    color: rgb(247, 121, 3);
+    font-style: oblique;
+    font-weight: bolder;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 3px 3px 3px 3px grey;
+    background-image: radial-gradient( circle 1292px at -13.6% 51.7%,  rgb(161, 117, 148) 0%, rgb(19, 194, 89) 51.5%, rgb(66, 76, 218) 88.6% );
+}
+
+button:hover{border: 2px solid rgb(113, 240, 81);
+color: rgb(145, 238, 102);}
+
+.ctitle{text-align: center;
+    color: blueviolet;
+font-size: 25px;
+font-weight: bold;}
