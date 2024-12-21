@@ -34,7 +34,7 @@ form{width: 90%;
         box-shadow: 2px 2px 2px 2px darkgray;
         font-size:25px ;}
 
-        #button1{width: 40%;
+        .button{width: 40%;
             font-size: 25px;
             border-radius: 5px;
             font-weight: bold;
