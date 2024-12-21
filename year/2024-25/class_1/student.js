@@ -68,7 +68,7 @@ document.getElementById('pdate71').innerHTML = data[22].D;
 });
 
 document.getElementById('button1').addEventListener('click', function(){
-  let correctPassword ="Ismile";
+  let correctPassword ="Sujay";
   let Password = document.getElementById("psw").value;
   if(correctPassword===Password){
       document.getElementById("students").style.display="block";
