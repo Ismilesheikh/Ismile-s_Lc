@@ -29,6 +29,7 @@ document.getElementById('welcome').innerHTML =data[5].D;
   const pname1 = document.getElementById('pname1');
   
   name1.innerHTML =data[5].D;
+document.getElementById('rel1').innerHTML =data[6].C;
   pname1.innerHTML = data[6].D;
   document.getElementById('dob1').innerHTML =data[7].D;
   document.getElementById('mno1').innerHTML = data[8].D;
