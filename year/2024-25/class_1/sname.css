@@ -62,6 +62,7 @@ margin-bottom: 10px;}
 
 table,td,tr{border: 1px solid black;
             font-weight: bold;
+            border-radius:5px;
         box-shadow: 1px 1px 1px 1px darkgray;}
 
 .first{float: left;
