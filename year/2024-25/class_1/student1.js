@@ -3,7 +3,7 @@
 async function getUsers() {
   try {
     const response = await fetch(
-      'https://script.google.com/macros/s/AKfycbwXfG04KKDbgq_2Kq287Rh2ijmJicqKYZv5JrUJA2mJnaUZfjMATxecDZaADo9e1WOR/exec',
+      'https://script.google.com/macros/s/AKfycbzJMGCKALdtkvldIHxWeY7FP79ebIhjuHAiBepNetsnzCpm2DZF3o6QkXsAqIgfQjek/exec',
       {
         method: 'GET',
       },
@@ -23,19 +23,20 @@ async function getUsers() {
 
 getUsers().then(data => {
 
-document.getElementById('welcome').innerHTML =data[5].D;
-  const name1 = document.getElementById('name1');
 
-  const pname1 = document.getElementById('pname1');
-  
-  name1.innerHTML =data[5].D;
-document.getElementById('rel1').innerHTML =data[6].C;
-  pname1.innerHTML = data[6].D;
+  //student i-------
+
+  document.getElementById('welcome1').innerHTML =data[5].D;
+
+  document.getElementById('name1').innerHTML =data[5].D;
+  document.getElementById('rel1').innerHTML =data[6].C;
+  document.getElementById('pname1').innerHTML = data[6].D;
   document.getElementById('dob1').innerHTML =data[7].D;
   document.getElementById('mno1').innerHTML = data[8].D;
   document.getElementById('class1').innerHTML = data[9].D;
   document.getElementById('sec1').innerHTML = data[10].D;
   document.getElementById('rate1').innerHTML = data[11].D;
+
   document.getElementById('sdate1').innerHTML = data[13].C;
   document.getElementById('today1').innerHTML = data[13].D;
   document.getElementById('tmonths1').innerHTML = data[13].E
@@ -65,22 +66,30 @@ document.getElementById('tamount1').innerHTML = data[13].G;
 document.getElementById('pdate71').innerHTML = data[22].D;
   document.getElementById('pamount71').innerHTML = data[22].E;
 
+
+
+document.getElementById('total1').innerHTML = data[28].E;
+  
+ 
 });
 
+
+//password for student i
+
 document.getElementById('button1').addEventListener('click', function(){
-  let correctPassword ="Sujay";
-  let Password = document.getElementById("psw").value;
+  let correctPassword ="Ismile@2024";
+  let Password = document.getElementById("psw1").value;
   if(correctPassword===Password){
-      document.getElementById("students").style.display="block";
-      document.getElementById("validate").style.display="none";
+      document.getElementById("student1").style.display="block";
+      document.getElementById("validate1").style.display="none";
   }
 
    else{if(Password=== "7563876753"){
-    document.getElementById("students").style.display="block";
-    document.getElementById("validate").style.display="none";
+    document.getElementById("student1").style.display="block";
+    document.getElementById("validate1").style.display="none";
    }
 
-   else{document.getElementById("alert").innerHTML="Enter Correct Password";}
+   else{document.getElementById("alert1").innerHTML="Enter Correct Password";}
   }
 
   });

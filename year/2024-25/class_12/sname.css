@@ -34,7 +34,7 @@ form{width: 90%;
         box-shadow: 2px 2px 2px 2px darkgray;
         font-size:25px ;}
 
-        #button1{width: 40%;
+        .button{width: 40%;
             font-size: 25px;
             border-radius: 5px;
             font-weight: bold;
@@ -42,41 +42,13 @@ form{width: 90%;
             box-shadow: 2px 2px 2px 2px darkgray;
         margin-top: 20px;}
 
-#alert1{text-align:center;
-color:red;
-font-weight:bold;
-margin-top: 10px;}
-
-#alert2{text-align:center;
-    color:red;
-    font-weight:bold;
-    margin-top: 10px;}
-
-    #alert3{text-align:center;
-        color:red;
-        font-weight:bold;
-        margin-top: 10px;}
-
-        #alert4{text-align:center;
-            color:red;
-            font-weight:bold;
-            margin-top: 10px;}
-
-            #alert5{text-align:center;
-                color:red;
-                font-weight:bold;
-                margin-top: 10px;}
-
-                #alert6{text-align:center;
-                    color:red;
-                    font-weight:bold;
-                    margin-top: 10px;}
+#alert1,#alert2, #alert3, #alert4, #alert5, #alert6{text-align:center;
+                                                     color:red;
+                                                      font-weight:bold;
+                                                       margin-top: 10px;}
 
             
-
-
-
-#students{display:none;}
+#student1,#student2,#student3,#student4,#student5,#student6{display:none;}
 
 
 h1{text-align: center;
@@ -143,6 +115,11 @@ img{
 .table_3 tr td{text-align:center;}
 .third{display: inline;
 width: 98%;}
+
+#tpaid1,#tpaid2,#tpaid3,#tpaid4,#tpaid5,#tpaid6{color: green;}
+.tpaid{color: green;}
+.due{color: red;}
+
 
 .table_4{width: 98%;
     margin-top: 20px;
