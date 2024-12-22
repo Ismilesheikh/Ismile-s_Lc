@@ -1,6 +1,6 @@
 *{padding: 0;
 margin: 0;}
-body{background-image: linear-gradient( 180.7deg,  rgba(0,213,255,1) 2.5%, rgba(79,255,255,1) 97.7% );}
+body{background-image: linear-gradient( 180.7deg,  rgb(194, 84, 221) 2.5%, rgba(79,255,255,1) 97.7% );}
 .main{display: inline-block;
     width: 98%;
     margin-left: 1%;
@@ -20,16 +20,10 @@ font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, O
     
     button{background-image: linear-gradient(to right, #603813 0%, #b29f94  51%, #603813  100%);
         }
-    button {
-        width:45%;
-        float: left;
-        height:90px;
-        font-size: 25px;
-        font-weight: bold;
-        margin-top: 10px;
-       margin-left:2.5%;
-       padding: 10px 45px;
-       text-align: center;
+    .but{width:92%;
+      margin-top: 10px;
+       margin-left:4%;
+       padding: 5px 5px 5px 5px ;
        text-transform: uppercase;
        transition: 0.5s;
        background-size: 200% auto;
@@ -40,6 +34,16 @@ font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, O
        text-decoration-line: none;
        
      }
+
+     .but button{width:45%;
+        text-align: center;
+        font-size: 20px;
+        height:80px ;
+        color: #fff;
+        font-weight: bold;
+        border-radius: 5px 100px ;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        margin: 4px;   }
 
      button:hover {
        background-position: right center; /* change the direction of the change here */
@@ -56,7 +60,7 @@ margin-right: 3%;
 width:94%;
 height:250px;
 border: 2px gold solid;
-box-shadow: 2px 2px 2px 2px gray;
+box-shadow:0 0 20px rgb(236, 231, 231);
 border-radius: 5px ;}
 
 .noticeTitle{text-align: center;}
@@ -87,6 +91,7 @@ p{text-align: center;
     
 .news{display:inline-block;
     margin-top: 10px;
+    background-size: 100% auto;
     margin-bottom: 10px;
     margin-left: 3%;
 margin-right: 3%;
@@ -94,7 +99,7 @@ overflow-y: scroll;
 width:94%;
 height:300px;
 border: 2px gold solid;
-box-shadow: 2px 2px 2px 2px gray;
+box-shadow:0 0 20px rgb(236, 231, 231);
 border-radius: 5px ;}
 
 .newsTitle{text-align: center;}
@@ -113,4 +118,22 @@ border-radius: 5px ;}
     background-color: rgb(92, 215, 231);
     box-shadow: 2px 2px 2px 2px gray;
 }
+
+.secTitle{margin-top: 5px;
+text-decoration: underline;}
+.sec_but{width: 94%;
+    margin-left: 2%;
+    margin-right: 2%;
+    border-radius:10px 100px  ;
+    box-shadow: 0 0 20px whitesmoke ;
+padding: 10px px;}
+.sec_but button{width: 60%;
+    height: 80px;
+    font-size: 30px;
+    border-radius: 5px 100px ;
+    font-weight: bold;
+    margin-top: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+     color: #940ea0;
+margin-left: 20%;}
 
