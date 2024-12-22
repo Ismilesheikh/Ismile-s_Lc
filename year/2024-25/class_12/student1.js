@@ -3,7 +3,7 @@
 async function getUsers() {
   try {
     const response = await fetch(
-      'https://script.google.com/macros/s/AKfycbzJMGCKALdtkvldIHxWeY7FP79ebIhjuHAiBepNetsnzCpm2DZF3o6QkXsAqIgfQjek/exec',
+      'https://script.google.com/macros/s/AKfycbzJThb9cdFmGT9AaWXdiTc_byEv2eRssEaWIEALZk11xtub421PYBi_Eekhjscq7L_Q/exec',
       {
         method: 'GET',
       },
