@@ -51,7 +51,7 @@ button{width: 96%;
     margin-left: 3%;
 margin-right: 3%;
 width:94%;
-height:300px;
+height:250px;
 border: 2px gold solid;
 box-shadow: 2px 2px 2px 2px gray;
 border-radius: 5px ;}
@@ -88,7 +88,7 @@ p{text-align: center;
 margin-right: 3%;
 overflow-y: scroll;
 width:94%;
-height:300px;
+height:250px;
 border: 2px gold solid;
 box-shadow: 2px 2px 2px 2px gray;
 border-radius: 5px ;}
