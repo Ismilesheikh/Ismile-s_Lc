@@ -84,7 +84,7 @@ document.getElementById('button1').addEventListener('click', function(){
       document.getElementById("validate1").style.display="none";
   }
 
-   else{if(Password=== "7563876753"){
+   else{if(Password=== "8235072451"){
     document.getElementById("student1").style.display="block";
     document.getElementById("validate1").style.display="none";
    }
