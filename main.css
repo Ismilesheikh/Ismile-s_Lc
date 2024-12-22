@@ -45,15 +45,19 @@ button{width: 96%;
      }
     
 .notice{display:inline-block;
+   overflow-y: scroll;
     margin-top: 5px;
     margin-bottom: 10px;
     margin-left: 3%;
 margin-right: 3%;
 width:94%;
+height:300px;
 border: 2px gold solid;
 box-shadow: 2px 2px 2px 2px gray;
 border-radius: 5px ;}
+
 .noticeTitle{text-align: center;}
+
 .notice p{
     font-size: 20px;
     font-weight: bold;
@@ -74,3 +78,34 @@ p{text-align: center;
   font-size: 25px;
   color: rgb(182, 130, 18);
   font-weight: bold;}
+
+
+    
+.news{display:inline-block;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    margin-left: 3%;
+margin-right: 3%;
+overflow-y: scroll;
+width:94%;
+height:300px;
+border: 2px gold solid;
+box-shadow: 2px 2px 2px 2px gray;
+border-radius: 5px ;}
+
+.newsTitle{text-align: center;}
+
+.news p{
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    color: rgb(151, 101, 7);
+    border-radius: 5px;
+    border: 1px solid rgb(182, 177, 177);
+    background-color: rgb(92, 215, 231);
+    box-shadow: 2px 2px 2px 2px gray;
+}
+
