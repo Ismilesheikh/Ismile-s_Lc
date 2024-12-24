@@ -12,8 +12,7 @@ button{width:91%;
     color: rgb(235, 231, 227);
     font-style: oblique;
     font-weight: bolder;
-    border: none;
-    border-radius: 10px;
+    border-radius: 10px 80px;
     box-shadow: 3px 3px 3px 3px grey;
     background-image: radial-gradient( circle 1292px at -13.6% 51.7%,  rgb(161, 117, 148) 0%, rgb(19, 194, 89) 51.5%, rgb(66, 76, 218) 88.6% );
 }
@@ -22,8 +21,11 @@ button:hover{border: 2px solid rgb(113, 240, 81);
 color: rgb(145, 238, 102);}
 
 .ctitle{text-align: center;
-    color: blueviolet;
-font-size: 25px;
+    color: rgb(68, 163, 13);
+font-size: 35px;
+text-decoration: underline;
+box-shadow: 0 0 5px rgb(125, 131, 131);
+border-radius:  60px 10px;
 font-weight: bold;}
 
 
