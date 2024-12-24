@@ -104,7 +104,7 @@ img{
 
 .fake{height: 20px;}
 
-#text1{width:70%;}
+#text1,#text2,#text3,#text4,#text6{width:70%;}
 
 .table_3{width: 98%;
     text-align: center;
