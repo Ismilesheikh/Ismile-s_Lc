@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Text to Speech</title>
+</head>
+<body>
+    <h1>Welcome to My Web Browser</h1>
+    <button onclick="speakText()">Speak</button>
+
+    <script type="text/javascript">
+        function speakText() {
+            var text = "Hello, this is a text to speech test.";
+            Android.speak(text);
+        }
+    </script>
+</body>
+</html>
