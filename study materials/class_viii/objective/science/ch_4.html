@@ -33,10 +33,6 @@
 
     function speakText() {
         const text = document.getElementById('text').value;
-        const language = document.getElementById('language').value;
-        const speech = new SpeechSynthesisUtterance();
-        speech.text = text;
-    speech.lang = language;
             Android.speak(text);
         }
 }
