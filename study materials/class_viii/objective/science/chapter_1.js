@@ -38,8 +38,20 @@ async function getUsers() {
     );
     
     document.getElementById("ans1_a").addEventListener('click',function() {
-      ans1_a.style.background='red';
+      document.getElementById("ans1_a").style.background=red;
     })
-    
-    
+
+document.getElementById("ans1_b").addEventListener('click',function() {
+      document.getElementById("ans1_b").style.background=red;
+    })
+
+
+    document.getElementById("ans1_c").addEventListener('click',function() {
+      document.getElementById("ans1_a").style.background=green;
+    })
+
+
+    document.getElementById("ans1_d").addEventListener('click',function() {
+      document.getElementById("ans1_d").style.backgroundred;
+    })
     
