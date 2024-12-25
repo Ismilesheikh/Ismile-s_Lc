@@ -7,11 +7,41 @@
     <h1>Welcome to My Web Browser</h1>
     <button onclick="speakText()">Speak</button>
 
-    <script type="text/javascript">
-        function speakText() {
-            var text = "kya hua.";
-            Android.speak(text);
+    <h1>Text to Speech Converter</h1>
+    <textarea id="text" rows="10" cols="50" placeholder="Enter text here..."></textarea><br>
+      <label for="language">Choose Language:</label>
+    <select id="language">
+        <option value="en-US">English (US)</option>
+        <option value="hi-IN">Hindi (India)</option>
+        <option value="es-ES">Spanish (Spain)</option>
+        <!-- Add more languages as needed -->
+    </select><br>
+    <button onclick="speak()">click me to  speak</button>
+
+    <script>
+      
+      function speak() {
+    const text = document.getElementById('text').value;
+    const language = document.getElementById('language').value;
+    const speech = new SpeechSynthesisUtterance();
+
+    speech.text = text;
+    speech.lang = language;
+
+    window.speechSynthesis.speak(speech);
+
+
+    function speakText() {
+        const text = document.getElementById('text').value;
+        const language = document.getElementById('language').value;
+        const speech = new SpeechSynthesisUtterance();
+        speech.text = text;
+    speech.lang = language;
+            Android.speak(speech);
         }
+}
+
+      
     </script>
 </body>
 </html>
