@@ -22,7 +22,7 @@ async function getUsers() {
   getUsers().then(data => {
     
     // Chapter 1
-    document.getElementById("chName").innerHTML =data[1].C6;
+    document.getElementById("chName").innerHTML =data[1].B6;
     
   //Question No 1 fetching
    document.getElementById("q1").innerHTML =data[3].Q6;
@@ -35,36 +35,43 @@ async function getUsers() {
     
   }
     );
+
+
+
 //Question No 1 style change
     var ans_seen = "Answer Seen";
     document.getElementById("ans1_a").addEventListener('click',function()
   {
     document.getElementById("ans1_a").style.background = 'green';
+document.getElementById("ans1_a").style.color = 'white';
   }
   )
 
   document.getElementById("ans1_b").addEventListener('click',function()
   {
     document.getElementById("ans1_b").style.background = 'red';
+document.getElementById("ans1_b").style.color = 'white';
   }
   )
 
   document.getElementById("ans1_c").addEventListener('click',function()
   {
     document.getElementById("ans1_c").style.background = 'green';
+document.getElementById("ans1_c").style.color = 'white';
   }
   )
 
   document.getElementById("ans1_d").addEventListener('click',function()
   {
     document.getElementById("ans1_d").style.background = 'red';
+document.getElementById("ans1_d").style.color = 'white';
   }
   )
 
   document.getElementById("ans1_e").addEventListener('click',function()
   {
-    document.getElementById("ans1_e").style.background = 'green';
-    document.getElementById("ans1_a").style.background = 'green';
+ document.getElementById("ans1_e").style.background = 'green';
+document.getElementById("ans1_e").style.color = 'white'; document.getElementById("ans1_a").style.background = 'green';
     document.getElementById("ans1_e").innerHTML =ans_seen;
   }
   )
