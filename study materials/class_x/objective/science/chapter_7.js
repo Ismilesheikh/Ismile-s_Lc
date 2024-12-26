@@ -22,15 +22,15 @@ async function getUsers() {
   getUsers().then(data => {
     
     // Chapter 1
-    document.getElementById("chName").innerHTML =data[1].C6;
+    document.getElementById("chName").innerHTML =data[1].C7;
     
   //Question No 1 fetching
-   document.getElementById("q1").innerHTML =data[3].Q6;
+   document.getElementById("q1").innerHTML =data[3].Q7;
    //Answer 
-   document.getElementById("ans1_a").innerHTML =data[4].A6;
-  document.getElementById("ans1_b").innerHTML =data[4].B6;
-  document.getElementById("ans1_c").innerHTML =data[4].C6;
-  document.getElementById("ans1_d").innerHTML =data[4].D6;
+   document.getElementById("ans1_a").innerHTML =data[4].A7;
+  document.getElementById("ans1_b").innerHTML =data[4].B7;
+  document.getElementById("ans1_c").innerHTML =data[4].C7;
+  document.getElementById("ans1_d").innerHTML =data[4].D7;
    //Question No 2
     
   }
