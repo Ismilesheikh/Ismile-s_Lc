@@ -1,0 +1,120 @@
+
+@media screen and (max-width: 600px) {
+        .title{text-align: center;
+                font-size: 30px;
+                font-weight: bold;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                text-decoration: underline;
+        }
+        
+        button{width: 90%;
+        height: 60px;
+        margin-left: 5%;
+        margin-top: 20px;
+        border-radius: 20px 60px;
+        font-size: 25px;
+        font-weight: bold;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        /*chapter style */
+
+        #chName{text-align: center;
+                font-size: 30px;
+                margin-bottom: 20px;
+        }
+        
+        .que_ans{width: 98%;
+                margin-left: 1%;
+                box-shadow: 0 0 10px rgb(240, 94, 94);
+                border-radius: 5px 85px;
+                border: 1px solid rgb(235, 59, 59);
+        
+               
+               
+        }
+        .que{width:96%;
+        font-size: 20px;
+         font-weight :bold;
+          margin-left: 2%;
+          margin-top :5px;
+          margin-bottom: 5px;
+          border-radius: 5px 85px 5px 5px;
+          border: 1px solid darkgray;
+          box-shadow: 0 0 4px rgb(231, 145, 145);
+          display: flex;
+             
+        }
+        
+        .que p{margin-left:2px;
+        margin-right: 10px;}
+        .ans{margin:5px;
+        border-radius: 5px 5px 5px 85px;
+        margin-bottom: 5px;
+        border: 1px solid darkgray;
+          box-shadow: 2px 2px 2px 2px darkgray;}
+        
+        .ans button{width: 94%;
+                    margin-left:3%;
+                    margin-top: 5px;
+                    margin-bottom: 5px; 
+                    box-shadow: 0 0 5px rgb(223, 231, 174);
+                    font-weight: bold;
+                    font-size: 25px;
+                    border-radius: 15px 100px;
+                    border: 1px solid darkgray;
+        }
+        
+.ans .seen{width: 50%;
+margin-left: 47%;}
+    
+}
+
+
+/* This media query applies styles for screens with a width between 601px and 1024px */
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+        .title{margin-left: 20%;
+                font-size: 30px;
+                font-weight: bold;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                text-decoration: underline;
+        }
+        
+        button{width: 50%;
+        height: 60px;
+        margin-left: 5%;
+        margin-top: 20px;
+        border-radius: 20px 60px;
+        font-size: 25px;
+        font-weight: bold;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        
+        .seen{width: 50%;
+                margin-left :47%;
+              }
+    }
+
+    @media screen and (min-width: 1024px) {
+        .title{text-align: center;
+                font-size: 30px;
+                font-weight: bold;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                text-decoration: underline;
+        }
+        
+        button{width: 25%;
+        height: 60px;
+        margin-left: 5%;
+        margin-top: 20px;
+        border-radius: 20px 60px;
+        font-size: 25px;
+        font-weight: bold;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        .seen{width: 50%;
+                margin-left :47%;
+              }
+    }
