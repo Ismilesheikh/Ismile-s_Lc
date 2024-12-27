@@ -92,6 +92,22 @@ document.getElementById("ans1_c").style.color = 'white';
   }
   )
 
+  document.getElementById("ans1_d").addEventListener('click',function()
+  {
+    document.getElementById("ans1_d").style.background = 'red';
+document.getElementById("ans1_d").style.color = 'white';
+  }
+  )
+
+  document.getElementById("ans1_e").addEventListener('click',function()
+  {
+ document.getElementById("ans1_e").style.background = 'green';
+document.getElementById("ans1_e").style.color = 'white'; document.getElementById("ans1_a").style.background = 'green';
+document.getElementById("ans1_a").style.color = 'white';
+    document.getElementById("ans1_e").innerHTML =ans_seen;
+  }
+  )
+
 //Question No 2 style change
      document.getElementById("ans2_a").addEventListener('click',function()
   {
