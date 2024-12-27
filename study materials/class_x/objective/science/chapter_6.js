@@ -205,5 +205,44 @@ document.getElementById("ans4_a").style.color = 'white';
     document.getElementById("ans4_e").innerHTML =ans_seen;
   }
   )
+//Question No 5 style change
+     document.getElementById("ans5_a").addEventListener('click',function()
+  {
+    document.getElementById("ans5_a").style.background = 'red';
+document.getElementById("ans5_a").style.color = 'white';
+  }
+  )
+
+  document.getElementById("ans5_b").addEventListener('click',function()
+  {
+    document.getElementById("ans5_b").style.background = 'red';
+document.getElementById("ans5_b").style.color = 'white';
+  }
+  )
+
+  document.getElementById("ans5_c").addEventListener('click',function()
+  {
+    document.getElementById("ans5_c").style.background = 'green';
+document.getElementById("ans5_c").style.color = 'white';
+  }
+  )
+
+  document.getElementById("ans5_d").addEventListener('click',function()
+  {
+    document.getElementById("ans5_d").style.background = 'red';
+document.getElementById("ans5_d").style.color = 'white';
+  }
+  )
+
+  document.getElementById("ans5_e").addEventListener('click',function()
+  {
+ document.getElementById("ans5_e").style.background = 'green';
+document.getElementById("ans5_e").style.color = 'white'; document.getElementById("ans5_c").style.background = 'green';
+document.getElementById("ans5_c").style.color = 'white';
+    document.getElementById("ans5_e").innerHTML =ans_seen;
+  }
+  )
+
+
   /*style ends */
 
