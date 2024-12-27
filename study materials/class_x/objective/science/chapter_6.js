@@ -56,7 +56,7 @@ document.getElementById("ans1_b").style.color = 'white';
 
   document.getElementById("ans1_c").addEventListener('click',function()
   {
-    document.getElementById("ans1_c").style.background = 'green';
+    document.getElementById("ans1_c").style.background = 'red';
 document.getElementById("ans1_c").style.color = 'white';
   }
   )
