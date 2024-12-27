@@ -37,6 +37,7 @@ font-weight: bold;}
 a{text-decoration: none;}
 .objective{width: 48%;
     margin-top: 20px ;
+    border:1px solid darkgray;
     box-shadow: 0 0 20px darkgray;
     border-radius: 5px 50px;
     font-size: 25px;
@@ -45,13 +46,13 @@ font-weight: bold;}
 .objective i{margin-left: 22%;
     color: rgb(16, 175, 175);}
 .objective:hover{border-radius: 10px 50px;
-    height: 400px;
     box-shadow: 0 0 20px rgb(145, 138, 138);}
 .objective p{display: none;
     border-radius: 5px 50px;
 background: greenyellow;
 width: 80%;
-margin-left: 10%;}
+margin-left: 10%;
+margin-bottom:10px;}
 
 .objective:hover p{display: block;}
 
