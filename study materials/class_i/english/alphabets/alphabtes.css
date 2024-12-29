@@ -1,0 +1,32 @@
+@media (max-width:600px){
+h1{text-align: center;
+background: rgb(243, 220, 117);
+border: 1px darkgray solid;
+border-radius: 0px 60px 0px;
+color: aquamarine;
+box-shadow: 0 0 5px rgb(72, 73, 73);
+}
+
+
+.td1 ,.td2{border: 1px solid darkcyan;
+    text-align: center;
+    font-size: 80px;
+    border-radius: 20px 20px;
+    width: 40%;}
+    
+tr td{text-align: center;
+border: 1px solid darkcyan;
+border-radius: 20px 20px;
+margin: 2px;}
+
+i{font-size: 25px;}
+
+table{width: 96%;
+    margin-left: 2%;
+    height: 140px;
+    border: 1px solid rgb(240, 153, 153);
+    box-shadow: 0 0 5px darkgrey;
+    border-radius: 5px 20px;}
+    
+
+}
