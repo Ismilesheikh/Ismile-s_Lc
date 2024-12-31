@@ -132,7 +132,9 @@ body{background-image: linear-gradient( 180.7deg,  rgb(194, 84, 221) 2.5%, rgba(
     box-shadow:0 0 20px rgb(236, 231, 231);
     border-radius: 5px ;}
     
-    .noticeTitle{text-align: center;}
+    .noticeTitle{text-align: center;
+                  font-size:25px;
+}
     
     .notice p{text-align: left;
         font-size: 20px;
@@ -150,13 +152,7 @@ body{background-image: linear-gradient( 180.7deg,  rgb(194, 84, 221) 2.5%, rgba(
     }
     
     
-    
-    p{text-align: center;
-      font-size: 25px;
-      color: rgb(182, 130, 18);
-      font-weight: bold;}
-    
-    
+  
         
     .news{display:inline-block;
         margin-top: 10px;
@@ -219,7 +215,7 @@ footer p{font-size: 15px;
     margin-top: 10px;
      padding:5px;
 margin-bottom:10px;
-margin-right: 10px;
+margin-right: 5px;
 }
 
 footer p:hover{
