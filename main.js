@@ -1,13 +1,7 @@
-function calculateHours(startTime) {
-            const startDate = new Date(startTime);
-            const currentDate = new Date();
-            const diffInMs = currentDate - startDate;
-            const diffInHours = diffInMs / (1000 * 60 * 60);
-            return diffInHours.toFixed(2); // returns the difference in hours, rounded to 2 decimal places
-        }
+let x = new Date();
+let y = new Date("2024-12-30 10:00:00");
+let hour=parseInt( (Number(x)-Number(y))/(1000*60*60));
+let min =parseInt( (Number(x)-Number(y))/(1000*60))-hour*60;
+let sec =parseInt( (Number(x)-Number(y))/(1000))-hour*60*60-min*60;
 
-        // Example start time (YYYY-MM-DDTHH:MM:SS format)
-        const startTime = '2024-12-30T10:00:00';
-
-        // Calculate hours and display in the element with id 'hourCounter'
-        document.getElementById('counter').innerText = `Hours passed: ${calculateHours(startTime)}`;
+document.getElementById('counter').innerHTML= hour+ ':'+ min +':'+sec;
