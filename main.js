@@ -5,3 +5,5 @@ let min =parseInt( (Number(x)-Number(y))/(1000*60))-hour*60;
 let sec =parseInt( (Number(x)-Number(y))/(1000))-hour*60*60-min*60;
 
 document.getElementById('counter').innerHTML='The Hours:'+ hour+ ':'+ min +':'+sec;
+
+counter.style.color='lightgreen';
