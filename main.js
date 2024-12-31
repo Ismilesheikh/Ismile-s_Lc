@@ -1,5 +1,5 @@
 
-function Updatetime() {
+function UpdateTime() {
 
 let x = new Date();
 let y = new Date("2024-12-30 10:00:00");
