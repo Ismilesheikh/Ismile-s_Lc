@@ -9,6 +9,6 @@ let sec =parseInt( (Number(x)-Number(y))/(1000))-hour*60*60-min*60;
 
 document.getElementById('counter').innerHTML='The Hours:'+ hour+ ':'+ min +':'+sec;
 
-counter.style.color='lightgreen';}
+counter.style.color='lightgreen';};
 
 setInterval(UpdateTime,1000);
