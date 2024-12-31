@@ -1,5 +1,4 @@
-*{padding: 0;
-margin: 0;}
+
 body{background-image: linear-gradient( 180.7deg,  rgb(194, 84, 221) 2.5%, rgba(79,255,255,1) 97.7% );}
 @media screen and (max-width:600px){
     .nav{display:block;
@@ -217,7 +216,7 @@ footer p{font-size: 15px;
     margin-left: 5px;
     color: #f3f1f1;
     margin-top: 10px;
-margin-right: 5px;
+margin-right: 15px;
 }
 
 footer p:hover{
