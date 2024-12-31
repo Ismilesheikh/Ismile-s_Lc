@@ -1,3 +1,6 @@
+
+function Updatetime() {
+
 let x = new Date();
 let y = new Date("2024-12-30 10:00:00");
 let hour=parseInt( (Number(x)-Number(y))/(1000*60*60));
@@ -6,4 +9,6 @@ let sec =parseInt( (Number(x)-Number(y))/(1000))-hour*60*60-min*60;
 
 document.getElementById('counter').innerHTML='The Hours:'+ hour+ ':'+ min +':'+sec;
 
-counter.style.color='lightgreen';
+counter.style.color='lightgreen';}
+
+setInterval(UpdateTime,1000);
