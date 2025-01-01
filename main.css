@@ -209,6 +209,7 @@ body{background-image: linear-gradient( 180.7deg,  rgb(194, 84, 221) 2.5%, rgba(
 
 
 footer span{font-size: 15px;
+text-align: center;
     margin-left: 5px;
     color: #f3f1f1;
     margin-top: 10px;
@@ -218,6 +219,13 @@ margin-right: 5px;
 
 footer span:hover{
    text-decoration: underline gold;
+}
+footer p{font-size: 15px;
+  text-align: center;
+    color: #f3f1f1;
+    margin-top: 10px;
+margin-bottom:10px;
+
 }
     
 }
