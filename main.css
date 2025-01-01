@@ -203,17 +203,15 @@ body{background-image: linear-gradient( 180.7deg,  rgb(194, 84, 221) 2.5%, rgba(
     margin-left: 20%;}
 
     footer{background: #cccac9;
-        
+        text-align: center;
            width: 100%;}
 
 
 
 footer span{font-size: 15px;
-text-align: center;
+
     margin-left: 5px;
     color: #f3f1f1;
-    margin-top: 10px;
-margin-bottom:10px;
 margin-right: 5px;
 }
 
@@ -222,9 +220,10 @@ footer span:hover{
 }
 footer p{font-size: 15px;
   text-align: center;
+  font-weight: bold;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: #f3f1f1;
     margin-top: 10px;
-margin-bottom:10px;
 
 }
     
@@ -449,10 +448,22 @@ margin-bottom:10px;
 
 
     footer{background: #cccac9;
-        display: inline-flex;
-        justify-content: end;
-        width: 100%;}
+        text-align: center;
+        }
 
+}
+
+footer span{font-size: 15px;
+    
+    
+    margin-left: 10px;
+    padding: 10px;
+    color: #f3f1f1;
+    margin-top: 10px;
+}
+
+footer span:hover{
+   text-decoration: underline gold;
 }
 
 footer p{font-size: 15px;
@@ -460,11 +471,6 @@ footer p{font-size: 15px;
     padding: 10px;
     color: #f3f1f1;
     margin-top: 10px;
-margin-right: 25px;
-}
-
-footer p:hover{
-   text-decoration: underline gold;
 }
 
 
