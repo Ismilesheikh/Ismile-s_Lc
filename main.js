@@ -10,6 +10,6 @@ if(hour>7*24){document.getElementById('counter').innerHTML="It's Time to Cut You
 else
 {document.getElementById('counter').innerHTML='The Hours:'+ hour+ ':'+ min +':'+sec;};
 
-counter.style.color='lightgreen';};
+counter.style.color='green';};
 
 setInterval(UpdateTime,1000);
