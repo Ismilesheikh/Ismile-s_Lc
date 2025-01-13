@@ -32,7 +32,7 @@ else{secs=sec;}
 if(hour>7*24){document.getElementById('counter').innerHTML="It's Time to Cut You Hairs";}
 else
 {document.getElementById('counter').innerHTML='The Hours:'+ hours+ ':'+ mins +':'+secs;};
-
+document.getElementById('days').innerHTML=parseInt(hour);
 counter.style.color='green';};
 
 setInterval(UpdateTime,1000);
