@@ -1,6 +1,8 @@
 *{margin:0;
 padding:0;}
-body{background-image: linear-gradient( 180.7deg,  rgb(194, 84, 221) 2.5%, rgba(79,255,255,1) 97.7% );}
+body{
+    background: linear-gradient( 180.7deg,  rgb(245, 59, 139) 2.5%, rgba(79,255,255,1) 97.7% );
+}
 @media screen and (max-width:600px){
     .nav{display:block;
         width: 100%;
@@ -185,19 +187,28 @@ body{background-image: linear-gradient( 180.7deg,  rgb(194, 84, 221) 2.5%, rgba(
     }
     
     .secTitle{margin-top: 5px;
-    text-decoration: underline;}
+                text-align: center;
+                font-size: 25px;
+                font-weight: bold;
+                color: rgb(222, 203, 30);
+                text-shadow: #77dfcd;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                text-decoration: underline rgb(18, 190, 142);}
     .sec_but{width: 94%;
         margin-left: 2%;
         margin-right: 2%;
+        margin-top: 20px;
+        margin-bottom: 20px;
         border-radius:10px 100px  ;
         box-shadow: 0 0 20px whitesmoke ;
-    padding: 10px px;}
+        padding: 10px px;}
     .sec_but button{width: 60%;
         height: 80px;
         font-size: 30px;
-        border-radius: 5px 100px ;
+        border-radius: 5px 80px ;
         font-weight: bold;
         margin-top: 15px;
+        margin-bottom: 15px;
         font-family: Verdana, Geneva, Tahoma, sans-serif;
          color: #f3edf3;
     margin-left: 20%;}
