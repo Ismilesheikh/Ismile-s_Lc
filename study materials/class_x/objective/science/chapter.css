@@ -12,7 +12,7 @@ body{background: whitesmoke;
         .counter{display: flex;
                 width: 20%;
                 position: sticky;
-                top:2px;
+                top:40%;
                 float: left;
                 padding: 1px;
                 border-radius:25px 0 20px;
