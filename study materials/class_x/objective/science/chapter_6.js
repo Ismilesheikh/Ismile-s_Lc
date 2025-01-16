@@ -28,6 +28,10 @@ function createQuestionElement(questionId, questionText, answers) {
   const questionP = document.createElement('p');
   questionP.id = questionId;
   questionP.innerText = questionText;
+  const snoP = document.createElement('p');
+ snoP.className = 'sno';
+  snoP.innerText = `Q${questionId.slice(1)}.`;
+  questionDiv.appendChild(snoP);
   questionDiv.appendChild(questionP);
 
   const answersDiv = document.createElement('div');
@@ -60,7 +64,7 @@ getUsers().then(data => {
 
     // Generate questions and answers
     const questionsContainer = document.getElementById('questionsContainer');
-    for (let i = 1; i <= 12; i++) {
+    for (let i = 1; i <= 31; i++) {
       const questionText = data[2 * i + 1].Q6;
       const answers = [
         data[2 * i + 2].A6,
@@ -89,31 +93,31 @@ function handleButtonClick(buttonId, isCorrect) {
   if (isCorrect) {
     incrementCorrectAnswerCounter();
   }
-}// Question No 1 style change
-document.getElementById("q1_ans1").addEventListener('click', function() {
-  handleButtonClick("q1_ans1", true);
-});
+}
 
-document.getElementById("q1_ans2").addEventListener('click', function() {
-  handleButtonClick("q1_ans2", false);
-});
+const correctAnswers = [3, 2, 3, 4, 1, 2, 3, 4, 1, 2, 3, 4, 1, 2, 3, 4, 1, 2, 3, 4, 1, 2, 3, 4, 1, 2, 3, 4, 1, 2, 3, 4]; // Specify correct answers for each question
 
-document.getElementById("q1_ans3").addEventListener('click', function() {
-  handleButtonClick("q1_ans3", false);
-});
+for (let i = 1; i <= 32; i++) {
+  const correctAnswerIndex = correctAnswers[i - 1]; // Get the correct answer index for the current question
+  
+  for (let j = 1; j <= 4; j++) {
+    const isCorrect = (j === correctAnswerIndex);
+    document.getElementById(`q${i}_ans${j}`).addEventListener('click', function() {
+      handleButtonClick(`q${i}_ans${j}`, isCorrect);
+    });
+  }
 
-document.getElementById("q1_ans4").addEventListener('click', function() {
-  handleButtonClick("q1_ans4", false);
-});
+  document.getElementById(`q${i}_ans`).addEventListener('click', function() {
+    document.getElementById(`q${i}_ans`).style.background = 'purple';
+    document.getElementById(`q${i}_ans`).style.color = 'white';
+    document.getElementById(`q${i}_ans`).innerHTML = "Answer shown";
+    document.getElementById(`q${i}_ans${correctAnswerIndex}`).style.background = 'green';
+    document.getElementById(`q${i}_ans${correctAnswerIndex}`).style.color = 'white';
+    document.getElementById(`q${i}_ans${correctAnswerIndex}`).disabled = true;
+  });
+}
 
-document.getElementById("q1_ans").addEventListener('click', function() {
-    document.getElementById("q1_ans").style.background = 'purple';
-    document.getElementById("q1_ans").style.color = 'white';
-  document.getElementById("q1_ans").innerHTML = "Answer shown";
-  document.getElementById("q1_ans1").style.background = 'green';
-  document.getElementById("q1_ans1").style.color = 'white';
-  document.getElementById("q1_ans1").disabled = "true";
-});
+
 
 
 });

@@ -1,20 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
+body{background: whitesmoke;
+
+}
 @media screen and (max-width: 600px) {
 
-        .counter{
-                width: 30%;
+        .counter{display: flex;
+                width: 20%;
                 position: sticky;
-                top: 0;
-                height: 50px;
-                margin-top: 0;
-                float: right;
-                margin-bottom: 10px;
-                border-radius: 20px 0;
+                top:2px;
+                float: left;
+                padding: 1px;
+                border-radius:25px 0 20px;
                 font-size: 15px;
                 font-weight: bold;
                 font-family: Verdana, Geneva, Tahoma, sans-serif;
                 text-align: center;
-                box-shadow: 0 0 5px rgb(240, 94, 94);
+                color: rgb(238, 19, 136);
+                box-shadow: 0 0 5px rgb(160, 160, 160) inset;
         }
 
         .title{text-align: center;
@@ -38,21 +45,25 @@
 
         /*chapter style */
 
-        #chName{text-align: center;
-                width: auto;
+        #chName {text-align: center;
+                width: 100%;
+                height: auto;
                 position: sticky;
                 top: 0px;
-                font-size: 30px;
-                margin-bottom: 20px;
-                background:goldenrod ;
+                font-weight: bold;
+                margin-bottom: 3px;
+                font-size: 40px;
+                border-radius: 0 0 30px 30px;
+                color: rgb(239, 81, 183);
+                background-color:rgb(130, 220, 238) ;
         }
         
         .que_ans{width: 98%;
                 margin-left: 1%;
-margin-top:20px;
-                box-shadow: 0 0 10px rgb(240, 94, 94);
-                border-radius: 5px 85px;
-                border: 1px solid rgb(235, 59, 59);
+                margin-top:60px; 
+                box-shadow: 0 0 20px rgb(184, 142, 160) inset, -10px -10px 20px rgb(250, 248, 248) inset;
+                border-radius: 5px 40px 15px 80px;
+                border: 1px solid rgb(253, 248, 248);
         
                
                
@@ -61,22 +72,24 @@ margin-top:20px;
         font-size: 20px;
          font-weight :bold;
           margin-left: 2%;
+          padding: 5px;
           margin-top :5px;
           margin-bottom: 5px;
-          border-radius: 5px 85px 5px 5px;
+          border-radius: 5px 30px 5px 20px;
           border: 1px solid darkgray;
           box-shadow: 0 0 4px rgb(231, 145, 145);
           display: flex;
              
         }
         
-        .que p{margin-left:2px;
-        margin-right: 10px;}
+        .que p{margin-left:0px;
+        margin-right: 0px;}
+
         .ans{margin:5px;
-        border-radius: 5px 5px 5px 85px;
+        border-radius: 5px 5px 5px 50px;
         margin-bottom: 5px;
         border: 1px solid darkgray;
-          box-shadow: 2px 2px 2px 2px darkgray;}
+          box-shadow: 10px 10px 10px rgb(196, 193, 193) inset,-10px -10px 10px white inset;}
         
         .ans button{width: 94%;
                     margin-left:3%;
