@@ -111,7 +111,7 @@ for (let i = 1; i <= 32; i++) {
     document.getElementById(`q${i}_ans`).style.background = 'purple';
     document.getElementById(`q${i}_ans`).style.color = 'white';
     document.getElementById(`q${i}_ans`).innerHTML = "Answer shown";
-    document.getElementById(`q${i}_ans${correctAnswerIndex}`).style.background = 'green';
+    document.getElementById(`q${i}_ans${correctAnswerIndex}`).style.background = 'lightgreen';
     document.getElementById(`q${i}_ans${correctAnswerIndex}`).style.color = 'white';
     document.getElementById(`q${i}_ans${correctAnswerIndex}`).disabled = true;
   });
