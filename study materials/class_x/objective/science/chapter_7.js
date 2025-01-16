@@ -82,7 +82,7 @@ let correctAnswerCounter = 0;
 
 function incrementCorrectAnswerCounter() {
   correctAnswerCounter++;
-  document.getElementById("correctCounter").innerText = `Correct Answers: ${correctAnswerCounter}`;
+  document.getElementById("correctCounter").innerText = `Correct Answers: ${correctAnswerCounter}/${totalQuestion}`;
 }
 
 function handleButtonClick(buttonId, isCorrect) {
@@ -99,7 +99,7 @@ const correctAnswers = [3, 2, 3, 4, 1, 2, 3, 4, 1, 2, 3, 4, 1, 2, 3, 4, 1, 2, 3,
 
 for (let i = 1; i <= 32; i++) {
   const correctAnswerIndex = correctAnswers[i - 1]; // Get the correct answer index for the current question
-
+totalQuestion=i;
   for (let j = 1; j <= 4; j++) {
     const isCorrect = (j === correctAnswerIndex);
     document.getElementById(`q${i}_ans${j}`).addEventListener('click', function() {
