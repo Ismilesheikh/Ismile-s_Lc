@@ -77,19 +77,25 @@ document.getElementById('total1').innerHTML = data[28].E;
 //password for student i
 
 document.getElementById('button1').addEventListener('click', function(){
-  let correctPassword ="Ismile@2024";
   let Password = document.getElementById("psw1").value;
-  if(correctPassword===Password){
-      document.getElementById("student1").style.display="block";
-      document.getElementById("validate1").style.display="none";
-  }
 
-   else{if(Password=== "7563876753"){
-    document.getElementById("student1").style.display="block";
-    document.getElementById("validate1").style.display="none";
-   }
-
-   else{document.getElementById("alert1").innerHTML="Enter Correct Password";}
-  }
-
+  fetch('/validate-password', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify({ password: Password })
+  })
+  .then(response => response.json())
+  .then(data => {
+    if (data.success) {
+      document.getElementById("student1").style.display = "block";
+      document.getElementById("validate1").style.display = "none";
+    } else {
+      document.getElementById("alert1").innerHTML = "Enter Correct Password";
+    }
+  })
+  .catch(error => {
+    console.error('Error:', error);
   });
+});

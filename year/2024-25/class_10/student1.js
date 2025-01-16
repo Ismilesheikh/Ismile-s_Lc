@@ -76,20 +76,26 @@ document.getElementById('total1').innerHTML = data[28].E;
 
 //password for student i
 
-document.getElementById('button1').addEventListener('click', function(){
-  let correctPassword ="Ismile@2024";
-  let Password = document.getElementById("psw1").value;
-  if(correctPassword===Password){
-      document.getElementById("student1").style.display="block";
-      document.getElementById("validate1").style.display="none";
-  }
+async function validatePassword(student, password) {
+  const response = await fetch('/validate-password', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify({ student, password })
+  });
+  const result = await response.json();
+  return result.success;
+}
 
-   else{if(Password=== "8235072451"){
-    document.getElementById("student1").style.display="block";
-    document.getElementById("validate1").style.display="none";
-   }
-
-   else{document.getElementById("alert1").innerHTML="Enter Correct Password";}
+document.getElementById('button1').addEventListener('click', async function() {
+  const password = document.getElementById("psw1").value;
+  const isValid = await validatePassword('student1', password);
+  if (isValid) {
+    document.getElementById("student1").style.display = "block";
+    document.getElementById("validate1").style.display = "none";
+  } else {
+    document.getElementById("alert1").innerHTML = "Enter Correct Password";
   }
 
   });
