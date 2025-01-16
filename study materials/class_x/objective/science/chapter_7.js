@@ -107,6 +107,12 @@ for (let i = 1; i <= 32; i++) {
     });
   }
 
+for (let j = 1; j <= 4; j++){
+    document.getElementById(`q${i}_ans${j}`).addEventListener('click', function() {
+document.getElementById(`q${i}_ans${correctAnswerIndex}`).disabled = true;
+    })
+  }
+
   document.getElementById(`q${i}_ans`).addEventListener('click', function() {
     document.getElementById(`q${i}_ans`).style.background = 'purple';
     document.getElementById(`q${i}_ans`).style.color = 'white';
