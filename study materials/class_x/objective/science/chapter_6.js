@@ -59,14 +59,15 @@ function createQuestionElement(questionId, questionText, answers) {
 
 getUsers().then(data => {
   if (data && data.length > 0) {
-    
+
+    let totalQuestion =Number(data[2].Answer6);
     // Set chapter name
-    document.getElementById("chName").innerHTML = data[1].B7;
+    document.getElementById("chName").innerHTML = data[1].B6;
 
     // Generate questions and answers
     const questionsContainer = document.getElementById('questionsContainer');
-    for (let i = 1; i <=32; i++) {
-      totalQuestion=i;
+    for (let i = 1; i <=totalQuestion; i++) {
+      
       const questionText = data[2 * i + 1].Q6;
       const answers = [
         data[2 * i + 2].A6,
