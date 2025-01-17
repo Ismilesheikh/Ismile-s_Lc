@@ -96,7 +96,7 @@ function handleButtonClick(buttonId, isCorrect) {
   }
 }
 
-correctAnswers = [];
+   const correctAnswers = [];
 function sum(rightAnswer) {
   return correctAnswers.push(rightAnswer);
 }
