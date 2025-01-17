@@ -96,7 +96,13 @@ function handleButtonClick(buttonId, isCorrect) {
   }
 }
 
-const correctAnswers = [3, 2, 3, 4, 1, 2, 3, 4, 1, 2, 3, 4, 1, 2, 3, 4, 1, 2, 3, 4, 1, 2, 3, 4, 1, 2, 3, 4, 1, 2, 3, 4]; // Specify correct answers for each question
+correctAnswers = [];
+function sum(rightAnswer) {
+  return correctAnswers.push(rightAnswer);
+}
+for(let i=1; i<=totalQuestion;i++){
+  rightAnswer=sum(Number(data[2*i+2].Answer7));
+} // Specify correct answers for each question
 
 for (let i = 1; i <=totalQuestion;; i++) {
   const correctAnswerIndex = correctAnswers[i - 1]; // Get the correct answer index for the current question
