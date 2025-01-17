@@ -65,6 +65,7 @@ getUsers().then(data => {
     // Generate questions and answers
     const questionsContainer = document.getElementById('questionsContainer');
     for (let i = 1; i <= 31; i++) {
+        totalQuestion=i;
       const questionText = data[2 * i + 1].Q6;
       const answers = [
         data[2 * i + 2].A6,
@@ -75,7 +76,7 @@ getUsers().then(data => {
       const questionElement = createQuestionElement(`q${i}`, questionText, answers);
       questionsContainer.appendChild(questionElement);
     }
-  }
+  
 
 
 let correctAnswerCounter = 0;
@@ -97,7 +98,7 @@ function handleButtonClick(buttonId, isCorrect) {
 
 const correctAnswers = [3, 2, 3, 4, 1, 2, 3, 4, 1, 2, 3, 4, 1, 2, 3, 4, 1, 2, 3, 4, 1, 2, 3, 4, 1, 2, 3, 4, 1, 2, 3, 4]; // Specify correct answers for each question
 
-for (let i = 1; i <= 32; i++) {
+for (let i = 1; i <=totalQuestion;; i++) {
   const correctAnswerIndex = correctAnswers[i - 1]; // Get the correct answer index for the current question
   totalQuestion=i;
   for (let j = 1; j <= 4; j++) {
@@ -125,6 +126,6 @@ document.getElementById(`q${i}_ans${correctAnswerIndex}`).style.color= 'black';
 }
 
 
-
+)
 
 });
