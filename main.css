@@ -17,14 +17,14 @@ body{
         display: none;
         font-size: 20px;
     background:gold ;}
-    
+
     .bi{margin-left: 0px;
         padding: 0;
         margin-right: 2px;
         align-items: center;
        }
-    
-    
+
+
  .nav ul li{display:none;
         text-align: center;
         font-size: 15px;
@@ -39,28 +39,43 @@ body{
         color: #ec5ea0;
         box-shadow: 0 0 5px rgb(171, 175, 172);
         margin-top: 10px;}
-    
-    
-        .nav ul{display: inline;
+        
+      
+        
+        .nav ul{display:block;
+        transition: width 0.1s;
+        width: 25px;
         margin-left: 0px;
         font-size: 25px;
         border-radius: 5px 100px;
         position: absolute;}
-    
+        
+.pContainer{
+  margin-left: 0;
+  border-radius: 0 15px 5px 20px;
+  margin-top: 30px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
         .nav ul:hover{background: #77dfcd;
-        width: 43%;
-        height: 420px;
+        width: 50%;
+        height: 450px;
         box-shadow: 0 0 20px rgb(230, 106, 188);}
-    
-      
-    
-    
+
+
+
+
         .nav ul:hover li{display: block;
+        padding:10px;
+        box-shadow: 0 0 10px white;
     border: 1px solid gold; }
-    
+
     li:hover{text-decoration: underline;
     border: none;}
-    
+
     .nav p{font-weight: bold;
         text-align: center;
         font-size: 25px;
@@ -76,8 +91,8 @@ body{
         box-shadow: 0 0 20px rgb(187, 179, 179);
         border-radius: 100%;
     height: 80px;}
-    
-    
+
+
     .myname{font-size: 18px;}
     .main{display: inline-block;
         width: 98%;
@@ -85,10 +100,10 @@ body{
         margin-right: 1%;
         border-radius: 5px;
         border: 2px solid rgb(223, 115, 223);}
-    
-    
+
+
         a{text-decoration: none;}
-        
+
         button{background-image: linear-gradient(to right, #603813 0%, #b29f94  51%, #603813  100%);
             }
         .but{width:92%;
@@ -103,9 +118,9 @@ body{
            border-radius: 5px;
            display: block;
            text-decoration-line: none;
-           
+
          }
-    
+
          .but button{width:45%;
             text-align: center;
             font-size: 20px;
@@ -115,13 +130,13 @@ body{
             border-radius: 5px 100px ;
             font-family: Verdana, Geneva, Tahoma, sans-serif;
             margin: 4px;   }
-    
+
          button:hover {
            background-position: right center; /* change the direction of the change here */
            color: #fff;
            text-decoration: none;
          }
-        
+
     .notice{display:inline-block;
        overflow-y: scroll;
         margin-top: 5px;
@@ -133,11 +148,11 @@ body{
     border: 2px gold solid;
     box-shadow:0 0 20px rgb(236, 231, 231);
     border-radius: 5px ;}
-    
+
     .noticeTitle{text-align: center;
                   font-size:25px;
 }
-    
+
     .notice p{text-align: left;
         font-size: 20px;
         font-weight: bold;
@@ -152,10 +167,10 @@ body{
         background-color: rgb(92, 215, 231);
         box-shadow: 2px 2px 2px 2px gray;
     }
-    
-    
-  
-        
+
+
+
+
     .news{display:inline-block;
         margin-top: 10px;
         background-size: 100% auto;
@@ -168,9 +183,9 @@ body{
     border: 2px gold solid;
     box-shadow:0 0 20px rgb(236, 231, 231);
     border-radius: 5px ;}
-    
+
     .newsTitle{text-align: center;}
-    
+
     .news p{text-align: left;
         font-size: 20px;
         font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -185,7 +200,7 @@ body{
         background-color: rgb(92, 215, 231);
         box-shadow: 2px 2px 2px 2px gray;
     }
-    
+
     .secTitle{margin-top: 5px;
                 text-align: center;
                 font-size: 25px;
@@ -238,7 +253,7 @@ footer p{font-size: 15px;
 padding:10px;
 
 }
-    
+
 }
 
 @media screen and (min-width:600px){
@@ -251,14 +266,14 @@ padding:10px;
         top: 0;
     background-color: aqua;
     }
-    
+
     .bi{margin-left: 0px;
         padding: 0;
         margin-right: 2px;
         align-items: center;
        }
-    
-    
+
+
    .nav ul li{display:none;
         text-align: center;
         font-size: 15px;
@@ -273,20 +288,20 @@ padding:10px;
         color: #ec5ea0;
         box-shadow: 0 0 5px rgb(171, 175, 172);
         margin-top: 10px;}
-    
-    
+
+
         .nav ul{display: none;
         margin-left: 0px;
         font-size: 25px;
         border-radius: 5px 100px;
         position: absolute;}
-      
-    
-    
-    
+
+
+
+
     li:hover{text-decoration: underline;
     border: none;}
-    
+
     .nav p{font-weight: bold;
         width: 22%;
         text-align: left;
@@ -295,10 +310,10 @@ padding:10px;
         color:rgb(158, 113, 16);
         font-style: italic;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;}
-   
+
     .bigScreen{width:75%;
         padding: 10px;
-      
+
     }
 
     .bigScreen button{ margin-left: 10px;
@@ -308,7 +323,7 @@ padding:10px;
         font-weight: bold;
     background:gold ;
     border-radius: 0px 10px;}
-    
+
     .profile_img{width: 85px;
     height: 85px;
     border-radius: 100%;
@@ -318,8 +333,8 @@ padding:10px;
         box-shadow: 0 0 20px rgb(187, 179, 179);
         border-radius: 100%;
     height: 80px;}
-    
-    
+
+
     .myname{font-size: 18px;}
     .main{display: inline-block;
         width: 98%;
@@ -327,10 +342,10 @@ padding:10px;
         margin-right: 1%;
         border-radius: 5px;
         border: 2px solid rgb(223, 115, 223);}
-    
-    
+
+
         a{text-decoration: none;}
-        
+
         button{background-image: linear-gradient(to right, #603813 0%, #b29f94  51%, #603813  100%);
             }
         .but{width:50%;
@@ -345,9 +360,9 @@ padding:10px;
            border-radius: 5px;
            display: block;
            text-decoration-line: none;
-           
+
          }
-    
+
          .but button{width:45%;
             text-align: center;
             font-size: 20px;
@@ -357,13 +372,13 @@ padding:10px;
             border-radius: 5px 100px ;
             font-family: Verdana, Geneva, Tahoma, sans-serif;
             margin: 4px;   }
-    
+
          button:hover {
            background-position: right center; /* change the direction of the change here */
            color: #fff;
            text-decoration: none;
          }
-        
+
     .notice{display:inline-block;
        overflow-y: scroll;
         margin-top: 5px;
@@ -375,9 +390,9 @@ padding:10px;
     border: 2px gold solid;
     box-shadow:0 0 20px rgb(236, 231, 231);
     border-radius: 5px ;}
-    
+
     .noticeTitle{text-align: center;}
-    
+
     .notice p{text-align: left;
         font-size: 20px;
         font-weight: bold;
@@ -392,16 +407,16 @@ padding:10px;
         background-color: rgb(92, 215, 231);
         box-shadow: 2px 2px 2px 2px gray;
     }
-    
-    
-    
+
+
+
     p{text-align: center;
       font-size: 25px;
       color: rgb(182, 130, 18);
       font-weight: bold;}
-    
-    
-        
+
+
+
     .news{display:inline-block;
         margin-top: 10px;
         background-size: 100% auto;
@@ -414,9 +429,9 @@ padding:10px;
     border: 2px gold solid;
     box-shadow:0 0 20px rgb(236, 231, 231);
     border-radius: 5px ;}
-    
+
     .newsTitle{text-align: center;}
-    
+
     .news p{text-align: left;
         font-size: 20px;
         font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -431,7 +446,7 @@ padding:10px;
         background-color: rgb(92, 215, 231);
         box-shadow: 2px 2px 2px 2px gray;
     }
-    
+
     .secTitle{margin-top: 5px;
     text-decoration: underline;}
     .sec_but{width: 94%;
@@ -458,8 +473,8 @@ padding:10px;
 }
 
 footer span{font-size: 15px;
-    
-    
+
+
     margin-left: 10px;
     padding: 10px;
     color: #f3f1f1;
@@ -476,5 +491,3 @@ footer p{font-size: 15px;
     color: #f3f1f1;
     margin-top: 10px;
 }
-
-
