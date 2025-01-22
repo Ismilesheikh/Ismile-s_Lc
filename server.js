@@ -6,7 +6,7 @@ const path = require('path');
 const bcrypt = require('bcrypt');
 const helmet = require('helmet');
 const app = express();
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 3001; // Change the port here
 
 app.use(bodyParser.json());
 app.use(express.static(path.join(__dirname, 'public')));
@@ -18,7 +18,7 @@ app.use(helmet());
 app.use(helmet.contentSecurityPolicy({
   directives: {
     defaultSrc: ["'self'"],
-    imgSrc: ["'self'", 'data:', 'http://localhost:3000'],
+    imgSrc: ["'self'", 'data:', 'http://localhost:3001'],
     scriptSrc: ["'self'", "'unsafe-inline'"],
     styleSrc: ["'self'", "'unsafe-inline'"],
     fontSrc: ["'self'", 'https:', 'data:']
@@ -26,12 +26,13 @@ app.use(helmet.contentSecurityPolicy({
 }));
 
 const validPasswords = {
-  student1: bcrypt.hashSync(process.env.PASSWORD, 10),
+  student1: 'Ismile@2024',
+  student2: 'Ismile@2024'
 };
 
 app.post('/validate-password', (req, res) => {
   const { student, password } = req.body;
-  if (validPasswords[student] && bcrypt.compareSync(password, validPasswords[student])) {
+  if (validPasswords[student] && validPasswords[student] === password) {
     res.json({ success: true });
   } else {
     res.json({ success: false });
