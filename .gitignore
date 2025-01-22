@@ -1,0 +1,15 @@
+// filepath: /c:/Users/HAJROT SHAIKH/OneDrive/GitHub/Ismile's LC/Ismile-s-Lc/.gitignore
+
+# Node modules
+node_modules/
+
+# Environment variables
+.env
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+
+# Other files and directories to ignore
+.DS_Store

@@ -1,5 +1,3 @@
-
-
 async function getUsers() {
   try {
     const response = await fetch(
@@ -76,26 +74,34 @@ document.getElementById('total1').innerHTML = data[28].E;
 
 //password for student i
 
-async function validatePassword(student, password) {
-  const response = await fetch('/validate-password', {
+require('dotenv').config();
+
+document.getElementById('loginForm').addEventListener('submit', function(event) {
+  event.preventDefault();
+
+  const password = document.getElementById('password').value;
+  const message = document.getElementById('message');
+
+  fetch('/validate-password', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json'
     },
-    body: JSON.stringify({ student, password })
+    body: JSON.stringify({ student: 'student1', password })
+  })
+  .then(response => response.json())
+  .then(data => {
+    if (data.success) {
+      message.textContent = 'Login successful!';
+      message.style.color = 'green';
+    } else {
+      message.textContent = 'Incorrect password. Please try again.';
+      message.style.color = 'red';
+    }
+  })
+  .catch(error => {
+    console.error('Error:', error);
+    message.textContent = 'An error occurred. Please try again later.';
+    message.style.color = 'red';
   });
-  const result = await response.json();
-  return result.success;
-}
-
-document.getElementById('button1').addEventListener('click', async function() {
-  const password = document.getElementById("psw1").value;
-  const isValid = await validatePassword('student1', password);
-  if (isValid) {
-    document.getElementById("student1").style.display = "block";
-    document.getElementById("validate1").style.display = "none";
-  } else {
-    document.getElementById("alert1").innerHTML = "Enter Correct Password";
-  }
-
-  });
+});

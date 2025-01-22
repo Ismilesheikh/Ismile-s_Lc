@@ -1,16 +1,16 @@
 {
-    "name": "ismile-s-lc",
-    "version": "1.0.0",
-    "description": "A project for Ismile's Learning Center",
-    "main": "server.js",
-    "scripts": {
-        "start": "node server.js"
-    },
-    "dependencies": {
-        "body-parser": "^1.20.3",
-        "express": "^4.21.2"
-    },
-    "keywords": ["learning", "center", "education"],
-    "author": "ismile",
-    "license": "ISC"
+  "name": "ismile-s-lc",
+  "version": "1.0.0",
+  "description": "Ismile's Learning Center",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "body-parser": "^1.19.0",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "helmet": "^4.6.0"
+  }
 }
