@@ -2,7 +2,7 @@
 function UpdateTime() {
 
 let x = new Date();
-let y = new Date("2025-01-22 01:00:00");
+let y = new Date("2025-01-23 01:00:00");
 let hour=parseInt( (Number(x)-Number(y))/(1000*60*60));
 let min =parseInt( (Number(x)-Number(y))/(1000*60))-hour*60;
 let sec =parseInt( (Number(x)-Number(y))/(1000))-hour*60*60-min*60;
