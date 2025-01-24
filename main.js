@@ -29,7 +29,7 @@ else{secs=sec;}
 
 
 
-if(hour>7*24){document.getElementById('counter').innerHTML="It's Time to Cut You Hairs";}
+if(hour>7*24*30){document.getElementById('counter').innerHTML="It's Time to Cut You Hairs";}
 else
 {document.getElementById('counter').innerHTML='The Hours:'+ hours+ ':'+ mins +':'+secs;};
 document.getElementById('days').innerHTML=`Days : Hour 🎂 ${days} : ${hour-24*days}`;
