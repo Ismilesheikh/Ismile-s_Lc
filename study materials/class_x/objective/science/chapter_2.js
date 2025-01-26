@@ -68,7 +68,7 @@ getUsers().then(data => {
     const questionsContainer = document.getElementById('questionsContainer');
     for (let i = 1; i <=totalQuestion; i++) {
 
-      const questionText = data[2 * i + 1].Q6;
+      const questionText = data[2 * i + 1].Q2;
       const answers = [
         data[2 * i + 2].A2,
         data[2 * i + 2].B2,
