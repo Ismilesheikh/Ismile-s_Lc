@@ -1,36 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Text to Speech</title>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Science Chapter 1</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='chapter.css'>
+
 </head>
 <body>
-    <h1>Text to Speech Converter</h1>
-    <textarea id="text" rows="10" cols="50" placeholder="Enter text here..."></textarea><br>
-    <label for="language">Choose Language:</label>
-    <select id="language">
-        <option value="en-US">English (US)</option>
-        <option value="hi-IN">Hindi (India)</option>
-        <option value="es-ES">Spanish (Spain)</option>
-        <!-- Add more languages as needed -->
-    </select><br>
-    <button onclick="speak()">Speak</button>
-
-    <script>
-      
-      function speak() {
-    const text = document.getElementById('text').value;
-    const language = document.getElementById('language').value;
-    const speech = new SpeechSynthesisUtterance();
-
-    speech.text = text;
-    speech.lang = language;
-
-    window.speechSynthesis.speak(speech);
-}
-
-      
-    </script>
+    <p id="correctCounter">Correct Answers: 0</p>
+    <div id="chName">Chapter Name</div>
+    <div id="questionsContainer"></div>
+       <!--Que Ans Starts-->
+  <script src="new6.js"></script>
 </body>
 </html>
