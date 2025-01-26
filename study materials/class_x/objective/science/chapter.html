@@ -8,19 +8,68 @@
     <link rel='stylesheet' type='text/css' media='screen' href='chapter.css'>
 </head>
 <body>
-    <p class="title">Chapters</p>
+    
 
-    <div class="chapteres">
-  <a href="ch_1.html"><button>Chapter 1</button></a>
-  <a href="ch_2.html"><button>Chapter 2</button></a>
-  <a href="ch_3.html"><button>Chapter 3</button></a>
-  <a href="ch_4.html"><button>Chapter 4</button></a>
-  <a href="ch_5.html"><button>Chapter 5</button></a>
-  <a href="ch_6.html"><button>6.नियंत्रण एंव समन्वय</button></a>
-  <a href="ch_7.html"><button>7.</button></a>
+    <div id="container"></div>
+
+<script>
+
+  async function getUsers() {
+  try {
+    const response = await fetch(
+      'https://script.google.com/macros/s/AKfycbyujs1_9BWkbFvUmxKcQxQZdhlD13gvqzuO2LfOrTXn2frViyq1qf-Va486qgm7q1w/exec',
+      {
+        method: 'GET',
+      },
+    );
+
+    if (!response.ok) {
+      throw new Error(`Error! status: ${response.status}`);
+    }
+
+    const data = await response.json();
+
+    return data;
+  } catch (error) {
+    console.log(error);
+  }
+}
+
+let container =document.getElementById('container');
+const chaperP=document.createElement('p');
+chaperP.innerText='Chapters';
+chaperP.className='title';
+container.appendChild(chaperP);
+
+function chaptersf(links,buttonText){
+ const chDiv=document.createElement('div');
+  let chapLinks=document.createElement('a');
+  chapLinks.href=links;
+  
+  
+  const chapButton=document.createElement('button');
+  chapButton.innerText=buttonText;
+  chapLinks.appendChild(chapButton);
+  chDiv.appendChild(chapLinks);
+ return chDiv;
+}
+
+getUsers().then(data => {
+  if (data && data.length > 0) {
+    console.log(data[4].Chapter);
+
+for(let i=1;i<=data[38].Chapter;i++){
+  let chapters=chaptersf(data[2*i+2].links,data[2*i+2].Chapter);
+
+  container.appendChild(chapters);
+  
+}
 
 
+  }
+  
+});
 
-    </div>
+</script>
 </body>
 </html>
