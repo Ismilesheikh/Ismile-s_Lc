@@ -93,6 +93,7 @@ body{background: whitesmoke;
           box-shadow: 10px 10px 10px rgb(196, 193, 193) inset,-10px -10px 10px white inset;}
         
         .ans button{width: 94%;
+                    min-height:60px;
                     margin-left:3%;
                     margin-top: 5px;
                     margin-bottom: 15px; 
