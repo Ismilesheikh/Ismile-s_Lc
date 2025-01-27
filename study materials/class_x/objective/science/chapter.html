@@ -36,10 +36,11 @@
 }
 
 let container =document.getElementById('container');
-const chaperP=document.createElement('p');
-chaperP.innerText='Chapters';
-chaperP.className='chapterTitle';
-container.appendChild(chaperP);
+const chapterP=document.createElement('p');
+chapterP.innerText='Chapters';
+chapterP.className='chName';
+chapterP.id='chName';
+container.appendChild(chapterP);
 
 function chaptersf(links,buttonText,picLinks){
  const chDiv=document.createElement('div');
