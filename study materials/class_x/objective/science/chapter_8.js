@@ -60,7 +60,7 @@ function createQuestionElement(questionId, questionText, answers) {
 getUsers().then(data => {
   if (data && data.length > 0) {
 
-    let totalQuestion =Number(data[2].Answer6);
+    let totalQuestion =Number(data[2].Answer8);
     // Set chapter name
     document.getElementById("chName").innerHTML = data[1].B8;
 
