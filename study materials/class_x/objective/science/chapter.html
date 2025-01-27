@@ -38,11 +38,16 @@
 let container =document.getElementById('container');
 const chaperP=document.createElement('p');
 chaperP.innerText='Chapters';
-chaperP.className='title';
+chaperP.className='chapterTitle';
 container.appendChild(chaperP);
 
-function chaptersf(links,buttonText){
+function chaptersf(links,buttonText,picLinks){
  const chDiv=document.createElement('div');
+ chDiv.className='chDiv';
+ const chPic=document.createElement('img');
+       chPic.src=picLinks;
+       chPic.alt='';
+      
   let chapLinks=document.createElement('a');
   chapLinks.href=links;
   
@@ -50,16 +55,17 @@ function chaptersf(links,buttonText){
   const chapButton=document.createElement('button');
   chapButton.innerText=buttonText;
   chapLinks.appendChild(chapButton);
+  chDiv.appendChild(chPic);
   chDiv.appendChild(chapLinks);
+  
  return chDiv;
 }
 
 getUsers().then(data => {
   if (data && data.length > 0) {
-    console.log(data[4].Chapter);
 
 for(let i=1;i<=data[38].Chapter;i++){
-  let chapters=chaptersf(data[2*i+2].links,data[2*i+2].Chapter);
+  let chapters=chaptersf(data[2*i+2].links,data[2*i+2].Chapter,data[2*i+2].pics);
 
   container.appendChild(chapters);
   
@@ -69,6 +75,7 @@ for(let i=1;i<=data[38].Chapter;i++){
   }
   
 });
+
 
 </script>
 </body>
