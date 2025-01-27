@@ -32,16 +32,29 @@ body{background: whitesmoke;
                 font-family: Verdana, Geneva, Tahoma, sans-serif;
                 text-decoration: underline;
         }
-        
-      .container button{width: 90%;
-        height: 60px;
-        margin-left: 5%;
-        margin-top: 20px;
-        border-radius: 20px 60px;
+        .chDiv{display:inline-flex;
+  align-items: center;
+   margin-top: 20px;
+   
+  }
+      .container button{width: 100%;
+        min-height: 60px;
+        text-align: center;
+      align-items: center;
+      font-weight: bolder;
+      border-radius:10px;
+      box-shadow: 0 0 5px orangered;
         font-size: 25px;
         font-weight: bold;
         font-family: Verdana, Geneva, Tahoma, sans-serif;
+
         }
+
+img{width: 60px;
+    height:60px;
+    margin-left: 20px;
+    border-radius:10px;
+    box-shadow: 0 0 5px orangered;}
 
         /*chapter style */
 
