@@ -37,16 +37,19 @@ body{background: whitesmoke;
    margin-top: 20px;
    
   }
-      .container button{width: 100%;
-        min-height: 60px;
-        text-align: center;
+      .container button{width:98%;
+        margin-left: 10px;
+      min-height: 60px;
+      font-size: 20px;
+      text-align: center;
       align-items: center;
       font-weight: bolder;
       border-radius:10px;
-      box-shadow: 0 0 5px orangered;
-        font-size: 25px;
-        font-weight: bold;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
+      border: none;
+      background: linear-gradient(to left,red,blue,green,yellow);
+      background-clip: text;
+color: transparent;
+      box-shadow: 0 0 10px ghostwhite inset;
 
         }
 
@@ -54,7 +57,8 @@ img{width: 60px;
     height:60px;
     margin-left: 20px;
     border-radius:10px;
-    box-shadow: 0 0 5px orangered;}
+    box-shadow: 0 0 10px ghostwhite inset;
+}
 
         /*chapter style */
 
