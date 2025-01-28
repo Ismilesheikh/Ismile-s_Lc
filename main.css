@@ -23,7 +23,10 @@ body{
         margin-right: 2px;
         align-items: center;
        }
-
+.profile_img img{
+  width:90px;
+height:90px;
+}
 
  .nav ul li{display:none;
         text-align: center;
