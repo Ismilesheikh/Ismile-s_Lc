@@ -70,9 +70,14 @@ let img_links=['','','','','https://th.bing.com/th/id/R.c7e89b930f8aa73cf72d5f16
 getUsers().then(data => {
   if (data && data.length > 0) {
     // Set chapter name
-    document.getElementById("chName").innerHTML = data[1].B7;
+let chName=document.getElementById("chName");
+    chName.innerHTML = data[1].B7;
+const chPic =document.createElement('img');
+chPic.src=data[1].Q7;
+chPic.className='chPic';
+
     let totalQuestion =Number(data[2].Answer7);
-    console.log(totalQuestion);
+    
 
     // Generate questions and answers
     const questionsContainer = document.getElementById('questionsContainer');
