@@ -59,7 +59,7 @@ color: transparent;
 
         /*chapter style */
 
-        #chName {display:inline-flex;
+        #chName {display:flex;
                 align-items: center;
                 text-align: center;
                 width: 100%;
