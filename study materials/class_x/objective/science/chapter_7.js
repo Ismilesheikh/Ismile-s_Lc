@@ -70,12 +70,13 @@ let img_links=['','','','','https://th.bing.com/th/id/R.c7e89b930f8aa73cf72d5f16
 getUsers().then(data => {
   if (data && data.length > 0) {
     // Set chapter name
-let chName=document.getElementById("chName");
+let chName=document.getElementById("chname");
+let picContainer=document.getElementById("pPic");
     chName.innerHTML = data[1].B7;
 const chPic =document.createElement('img');
 chPic.src=data[1].Q7;
 chPic.className='chPic';
-chName.appendChild(chPic);
+picContainer.appendChild(chPic);
 
     let totalQuestion =Number(data[2].Answer7);
     
