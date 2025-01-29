@@ -75,6 +75,7 @@ let chName=document.getElementById("chName");
 const chPic =document.createElement('img');
 chPic.src=data[1].Q7;
 chPic.className='chPic';
+chName.appendChild(chPic);
 
     let totalQuestion =Number(data[2].Answer7);
     
