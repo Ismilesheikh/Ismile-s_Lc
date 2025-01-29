@@ -60,7 +60,7 @@ color: transparent;
 
         /*chapter style */
 
-        #chName {display:inline-block;
+        #chName {display:inline-flex;
                 text-align: center;
                 width: 100%;
                 height: auto;
