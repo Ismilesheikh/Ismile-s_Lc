@@ -7,7 +7,7 @@
 .chPic{width:40px;
         height:40px;
         border-radius:10px;
-        padding:5px;
+        margin-left:10px;
        }
 @media screen and (max-width: 600px) {
 
@@ -61,6 +61,7 @@ color: transparent;
         /*chapter style */
 
         #chName {display:inline-flex;
+                align-items: center;
                 text-align: center;
                 width: 100%;
                 height: auto;
