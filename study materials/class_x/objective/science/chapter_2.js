@@ -72,7 +72,7 @@ getUsers().then(data => {
     // Set chapter name
 let chName=document.getElementById("chname");
 let picContainer=document.getElementById("pPic");
-    chName.innerHTML = data[1].B7;
+    chName.innerHTML = data[1].B2;
 const chPic =document.createElement('img');
 chPic.src=data[1].Q2;
 chPic.className='chPic';
@@ -84,7 +84,7 @@ picContainer.appendChild(chPic);
     // Generate questions and answers
     const questionsContainer = document.getElementById('questionsContainer');
     for (let i = 1; i <=totalQuestion; i++) {
-      const questionText = data[2 * i + 1].Q7;
+      const questionText = data[2 * i + 1].Q2;
       const answers = [
         data[2 * i + 2].A2,
         data[2 * i + 2].B2,
