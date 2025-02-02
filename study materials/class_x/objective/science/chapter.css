@@ -14,7 +14,7 @@
         .counter{display: flex;
                 width: 20%;
                 position: sticky;
-                top:40%;
+                top:90%;
                 float: left;
                 padding: 1px;
                 border-radius:25px 0 20px;
@@ -139,6 +139,7 @@ margin-left: 47%;}
 
 
 /* This media query applies styles for screens with a width between 601px and 1024px */
+
 @media screen and (min-width: 601px) and (max-width: 1024px) {
         .title{margin-left: 20%;
                 font-size: 30px;
