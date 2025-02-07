@@ -1,4 +1,4 @@
-   async function getUsers() {
+async function getUsers() {
   try {
     const response = await fetch(
       'https://script.google.com/macros/s/AKfycbyujs1_9BWkbFvUmxKcQxQZdhlD13gvqzuO2LfOrTXn2frViyq1qf-Va486qgm7q1w/exec',
@@ -19,7 +19,7 @@
   }
 }
 
-function createQuestionElement(questionId, questionText, answers) {
+function createQuestionElement(questionId, questionText, answers,imgLinks) {
   const queAnsDiv = document.createElement('div');
   queAnsDiv.className = 'que_ans';
 
@@ -28,12 +28,19 @@ function createQuestionElement(questionId, questionText, answers) {
   const questionP = document.createElement('p');
   questionP.id = questionId;
   questionP.innerText = questionText;
+  const imgDiv=document.createElement('div');
+  imgDiv.className='imgDiv';
+  const image=document.createElement('img');
+  image.id=`${questionId}_img`;
+  image.src=imgLinks;
+  image.alt='';
+  
   const snoP = document.createElement('p');
  snoP.className = 'sno';
   snoP.innerText = `Q${questionId.slice(1)}.`;
   questionDiv.appendChild(snoP);
   questionDiv.appendChild(questionP);
-
+imgDiv.appendChild(image);
   const answersDiv = document.createElement('div');
   answersDiv.className = 'ans';
 
@@ -45,6 +52,7 @@ function createQuestionElement(questionId, questionText, answers) {
   });
 
   queAnsDiv.appendChild(questionDiv);
+  queAnsDiv.appendChild(imgDiv);
   queAnsDiv.appendChild(answersDiv);
 
   // Create and append the custom button
@@ -56,18 +64,26 @@ function createQuestionElement(questionId, questionText, answers) {
 
   return queAnsDiv;
 }
+let img_links=['','','','','https://th.bing.com/th/id/R.c7e89b930f8aa73cf72d5f167d1d16ed?rik=3obl%2fhI6QdNIMA&riu=http%3a%2f%2fthewowstyle.com%2fwp-content%2fuploads%2f2015%2f01%2ffree-beautiful-place-wallpaper-hd-173.jpg&ehk=92RRpT4hrYheMDBZkK0HhLLXx9%2fGDjnafeDmbgjE1K8%3d&risl=&pid=ImgRaw&r=0']
+
 
 getUsers().then(data => {
   if (data && data.length > 0) {
+    // Set chapter name
+let chName=document.getElementById("chname");
+let picContainer=document.getElementById("pPic");
+    chName.innerHTML = data[1].B6;
+const chPic =document.createElement('img');
+chPic.src=data[1].Q6;
+chPic.className='chPic';
+picContainer.appendChild(chPic);
 
     let totalQuestion =Number(data[2].Answer6);
-    // Set chapter name
-    document.getElementById("chName").innerHTML = data[1].B6;
+    
 
     // Generate questions and answers
     const questionsContainer = document.getElementById('questionsContainer');
     for (let i = 1; i <=totalQuestion; i++) {
-      
       const questionText = data[2 * i + 1].Q6;
       const answers = [
         data[2 * i + 2].A6,
@@ -75,7 +91,7 @@ getUsers().then(data => {
         data[2 * i + 2].C6,
         data[2 * i + 2].D6,
       ];
-      const questionElement = createQuestionElement(`q${i}`, questionText, answers);
+      const questionElement = createQuestionElement(`q${i}`, questionText, answers,`${data[2*i+1].D6}`);
       questionsContainer.appendChild(questionElement);
     }
     
@@ -133,6 +149,8 @@ document.getElementById(`q${i}_ans${correctAnswerIndex}`).disabled = true;
     document.getElementById(`q${i}_ans${correctAnswerIndex}`).style.color = 'white';
     document.getElementById(`q${i}_ans${correctAnswerIndex}`).disabled = true;
   });
+  
+  
   
   
 }

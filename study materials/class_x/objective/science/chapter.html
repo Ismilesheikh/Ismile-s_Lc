@@ -9,7 +9,7 @@
 </head>
 <body>
     
-
+<div id="chTitle">Loading...</div>
     <div class="container" id="container"></div>
 
 <script>
@@ -36,11 +36,8 @@
 }
 
 let container =document.getElementById('container');
-const chapterP=document.createElement('p');
-chapterP.innerText='Chapters Science (X)';
-chapterP.className='chName';
-chapterP.id='chName';
-container.appendChild(chapterP);
+const chTitle=document.getElementById('chTitle');
+
 
 function chaptersf(links,buttonText,picLinks){
  const chDiv=document.createElement('div');
@@ -64,7 +61,7 @@ function chaptersf(links,buttonText,picLinks){
 
 getUsers().then(data => {
   if (data && data.length > 0) {
-
+chTitle.innerText=data[2].Chapter;
 for(let i=1;i<=data[38].Chapter;i++){
   let chapters=chaptersf(data[2*i+2].links,data[2*i+2].Chapter,data[2*i+2].pics);
 
@@ -80,6 +77,19 @@ for(let i=1;i<=data[38].Chapter;i++){
 
 </script>
 <style>
+
+  #chTitle{
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: rgb(238, 72, 205);
+    background: linear-gradient(to left, #70dfee,rgb(244, 241, 241));
+    background-clip: text;
+    color: transparent;
+   
+  }
 body{background:darkgray;}
 img{width: 60px;
     height:60px;
