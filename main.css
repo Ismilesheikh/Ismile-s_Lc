@@ -197,10 +197,12 @@ height:90px;
 
     .secTitle{margin-top: 5px;
                 text-align: center;
-                font-size: 25px;
+                font-size: 35px;
                 font-weight: bold;
-                color: rgb(222, 203, 30);
+                color:transparent;
                 text-shadow: #77dfcd;
+                background: linear-gradient(to bottom, #d41270, #3ac0d1, #06cd1d);
+                background-clip: text;
                 font-family: Verdana, Geneva, Tahoma, sans-serif;
                 text-decoration: underline rgb(18, 190, 142);}
     .sec_but{width: 94%;
@@ -208,19 +210,32 @@ height:90px;
         margin-right: 2%;
         margin-top: 20px;
         margin-bottom: 20px;
-        border-radius:10px 100px  ;
+        border-radius:20px 100px;
         box-shadow: 0 0 20px whitesmoke ;
         padding: 10px px;}
     .sec_but button{width: 60%;
         height: 80px;
         font-size: 30px;
-        border-radius: 5px 80px ;
+        border-radius: 50px 80px ;
         font-weight: bold;
         margin-top: 15px;
         margin-bottom: 15px;
         font-family: Verdana, Geneva, Tahoma, sans-serif;
          color: #f3edf3;
     margin-left: 20%;}
+    .sec_but button:hover{background: #e65dd8;
+        color: #f3edf3;
+        text-decoration: underline;
+        border: 1px solid gold;
+        box-shadow: 0 0 20px rgb(230, 106, 188);
+        border-radius: 50px 80px;
+        font-size: 35px;
+        font-weight: bold;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        margin-left: 20%;
+    }
 
     footer{background: #cccac9;
         text-align: center;

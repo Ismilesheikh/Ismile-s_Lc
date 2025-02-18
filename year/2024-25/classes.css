@@ -9,10 +9,10 @@ td{width: 50%;}
 border-radius: 20px 20px;
 margin-top: 35px;}
 
-button{width:91%;
+button{width:90%;
     height: 100px;
-    margin-left:3%;
-    margin-top: 10px;
+    margin-left:5%;
+    margin-top: 20px;
     font-size: 45px;
     color: rgb(240, 237, 238);
     font-style: oblique;
@@ -24,12 +24,29 @@ button{width:91%;
 }
 
 button:hover{border: 2px solid rgb(113, 240, 81);
-color: rgb(145, 238, 102);}
+    color: #f3edf3;
+    text-decoration: underline;
+    border: 2px solid gold;
+    box-shadow: 0 0 20px rgb(230, 106, 188);
+    border-radius: 50px 80px;
+    font-size: 50px;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10%;
+
+}
 
 .ctitle{text-align: center;
-    color: blueviolet;
-    text-decoration: underline;
-font-size: 35px;
+    justify-content: center;
+    font-size: 35px;
 border-radius: 20px 40px ;
 box-shadow: 0 0  20px rgb(248, 133, 133);
 font-weight: bold;}
+
+.ctitle p{width: max-content;
+    margin-left: 40%;
+    color:transparent;
+    background: linear-gradient(to left,red,green,yellow);
+    background-clip: text;}
