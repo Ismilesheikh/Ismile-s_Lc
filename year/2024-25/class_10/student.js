@@ -1,155 +1,137 @@
-
-
 async function getUsers() {
-  try {
-    const response = await fetch(
-      'https://script.google.com/macros/s/AKfycbwXfG04KKDbgq_2Kq287Rh2ijmJicqKYZv5JrUJA2mJnaUZfjMATxecDZaADo9e1WOR/exec',
-      {
-        method: 'GET',
-      },
-    );
-
-    if (!response.ok) {
-      throw new Error(`Error! status: ${response.status}`);
+    try {
+      const response = await fetch(
+        'https://script.google.com/macros/s/AKfycbzJMGCKALdtkvldIHxWeY7FP79ebIhjuHAiBepNetsnzCpm2DZF3o6QkXsAqIgfQjek/exec',
+        {
+          method: 'GET',
+        },
+      );
+  
+      if (!response.ok) {
+        throw new Error(`Error! status: ${response.status}`);
+      }
+  
+      const data = await response.json();
+  
+      return data;
+    } catch (error) {
+      console.log(error);
     }
-
-    const data = await response.json();
-
-    return data;
-  } catch (error) {
-    console.log(error);
   }
-}
-
-getUsers().then(data => {
-
-document.getElementById('welcome').innerHTML =data[5].D;
-  const name1 = document.getElementById('name1');
-
-  const pname1 = document.getElementById('pname1');
   
-  name1.innerHTML =data[5].D;
-document.getElementById('rel1').innerHTML =data[6].C;
-  pname1.innerHTML = data[6].D;
-  document.getElementById('dob1').innerHTML =data[7].D;
-  document.getElementById('mno1').innerHTML = data[8].D;
-  document.getElementById('class1').innerHTML = data[9].D;
-  document.getElementById('sec1').innerHTML = data[10].D;
-  document.getElementById('rate1').innerHTML = data[11].D;
-  document.getElementById('sdate1').innerHTML = data[13].C;
-  document.getElementById('today1').innerHTML = data[13].D;
-  document.getElementById('tmonths1').innerHTML = data[13].E
-  document.getElementById('days1').innerHTML = data[13].F;
-document.getElementById('tamount1').innerHTML = data[13].G;
-  document.getElementById('tpaid1').innerHTML = data[13].H;
-  document.getElementById('due1').innerHTML = data[13].I;
-
-  document.getElementById('pdate11').innerHTML = data[16].D;
-  document.getElementById('pamount11').innerHTML = data[16].E;
-
-  document.getElementById('pdate21').innerHTML = data[17].D;
-  document.getElementById('pamount21').innerHTML = data[17].E;
-
-  document.getElementById('pdate31').innerHTML = data[18].D;
-  document.getElementById('pamount31').innerHTML = data[18].E;
-
-  document.getElementById('pdate41').innerHTML = data[19].D;
-  document.getElementById('pamount41').innerHTML = data[19].E;
-
-  document.getElementById('pdate51').innerHTML = data[20].D;
-  document.getElementById('pamount51').innerHTML = data[20].E;
-
-  document.getElementById('pdate61').innerHTML = data[21].D;
-  document.getElementById('pamount61').innerHTML = data[21].E;
-
-document.getElementById('pdate71').innerHTML = data[22].D;
-  document.getElementById('pamount71').innerHTML = data[22].E;
-
-
-
+  getUsers().then(data => {
   
-  //student ii-------
-
-  document.getElementById('welcome2').innerHTML =data[35].D;
-
-  document.getElementById('name2').innerHTML =data[35].D;
-  document.getElementById('rel2').innerHTML =data[36].C;
-  document.getElementById('pname2').innerHTML = data[36].D;
-  document.getElementById('dob2').innerHTML =data[37].D;
-  document.getElementById('mno2').innerHTML = data[38].D;
-  document.getElementById('class2').innerHTML = data[39].D;
-  document.getElementById('sec2').innerHTML = data[40].D;
-  document.getElementById('rate2').innerHTML = data[41].D;
-
-  document.getElementById('sdate2').innerHTML = data[43].C;
-  document.getElementById('today2').innerHTML = data[43].D;
-  document.getElementById('tmonths2').innerHTML = data[43].E
-  document.getElementById('days2').innerHTML = data[43].F;
-document.getElementById('tamount2').innerHTML = data[43].G;
-  document.getElementById('tpaid2').innerHTML = data[43].H;
-  document.getElementById('due2').innerHTML = data[43].I;
-
-  document.getElementById('pdate12').innerHTML = data[46].D;
-  document.getElementById('pamount12').innerHTML = data[46].E;
-
-  document.getElementById('pdate22').innerHTML = data[47].D;
-  document.getElementById('pamount22').innerHTML = data[47].E;
-
-  document.getElementById('pdate32').innerHTML = data[48].D;
-  document.getElementById('pamount32').innerHTML = data[48].E;
-
-  document.getElementById('pdate42').innerHTML = data[49].D;
-  document.getElementById('pamount42').innerHTML = data[49].E;
-
-  document.getElementById('pdate52').innerHTML = data[50].D;
-  document.getElementById('pamount52').innerHTML = data[50].E;
-
-  document.getElementById('pdate62').innerHTML = data[51].D;
-  document.getElementById('pamount62').innerHTML = data[51].E;
-
-document.getElementById('pdate72').innerHTML = data[52].D;
-  document.getElementById('pamount72').innerHTML = data[52].E;
-
-
-  document.getElementById('total2').innerHTML = data[58].E
-
-});
-
-
-document.getElementById('button1').addEventListener('click', function(){
-  let correctPassword ="Ismile";
-  let Password = document.getElementById("psw").value;
-  if(correctPassword===Password){
-      document.getElementById("students").style.display="block";
-      document.getElementById("validate").style.display="none";
+      //  totalStudent
+      const totalStudent=parseInt(data[2].F);
+      //student list
+      let studentNDiv=document.getElementById('studentNDiv');
+  
+      let sList=document.createElement('div');
+      sList.className='sList';
+      studentNDiv.appendChild(sList);
+  
+  const studentNames = []; 
+  
+  function getStudentNames(sdat) {
+      studentNames.push(sdat);
   }
-
-   else{if(Password=== "7563876753"){
-    document.getElementById("students").style.display="block";
-    document.getElementById("validate").style.display="none";
-   }
-
-   else{document.getElementById("alert").innerHTML="Enter Correct Password";}
+  for(let i=0;i<=totalStudent-1;i++){
+      let sdat=data[30*i+5].D;
+      let sName=getStudentNames(sdat);
   }
-
+  
+  
+  // Example student names
+   studentNames.forEach((studentName,index)=>{
+      let sItem=document.createElement('button');
+      sItem.innerText=`${index+1}.${studentName}`;   
+      sItem.id=`student${index}`;
+      sItem.className=`student${index}`;
+      sList.appendChild(sItem);
   });
-
-
-  //password for student ii
-  document.getElementById('button2').addEventListener('click', function(){
-    let correctPassword ="Ismile@2024";
-    let Password = document.getElementById("psw2").value;
-    if(correctPassword===Password){
-        document.getElementById("student2").style.display="block";
-        document.getElementById("validate2").style.display="none";
-    }
   
-     else{if(Password=== "7563876753"){
-      document.getElementById("student2").style.display="block";
-      document.getElementById("validate2").style.display="none";
-     }
+  document.querySelectorAll('.sList button').forEach((button, index) => {
+      button.addEventListener('click', () => {
+          document.querySelectorAll('.studentTables').forEach((studentDiv) => {
+              studentDiv.style.display = 'none';
+          });
   
-     else{document.getElementById("alert2").innerHTML="Enter Correct Password";}
-    }
+          document.querySelector(`.studentTables.student${index+1}`).style.display = 'block';
+      });
+  });
   
-    });
+    
+  
+  
+          // Function to create a table element
+          function createTable(id, className, data) {
+              const table = document.createElement('table');
+              table.id = id;
+              table.className = className;
+  
+              data.forEach((rowData ,rowIndex)=> {
+                  const row = document.createElement('tr');
+                  rowData.forEach((cellData,cellIndex) => {
+                      const cell = document.createElement('td');
+                      cell.id = `${id}_row${rowIndex + 1}_td${cellIndex + 1}`;
+  cell.className = `${id}_td${cellIndex + 1}`;
+                      cell.innerText = cellData;
+                      row.appendChild(cell);
+                  });
+                  table.appendChild(row);
+              });
+  
+              return table;
+          }
+  
+          // Example data for students
+          const exampleData = [];
+          const picLinks=[];
+  for(let i=0;i<=totalStudent-1;i++){
+   let newStudent= { data1: [[data[30*i+5].C, data[30*i+5].D], [data[30*i+6].C, data[30*i+6].D], [data[30*i+7].C, data[30*i+7].D], [data[30*i+8].C, data[30*i+8].D], [data[30*i+9].C, data[30*i+9].D], [data[30*i+10].C, data[30*i+10].D],[data[30*i+11].C, data[30*i+11].D]],
+     data2: [[data[30*i+12].C, data[30*i+12].D,data[30*i+12].E,data[30*i+12].F,data[30*i+12].G,data[30*i+12].H,data[30*i+12].I], [data[30*i+13].C, data[30*i+13].D,data[30*i+13].E,data[30*i+13].F,data[30*i+13].G,data[30*i+13].H,data[30*i+13].I]],
+     data3: [[data[30*i+15].C,data[30*i+15].D,data[30*i+15].E],
+      [data[30*i+16].C,data[30*i+16].D,data[30*i+16].E],
+       [data[30*i+17].C,data[30*i+17].D,data[30*i+17].E],
+       [data[30*i+18].C,data[30*i+18].D,data[30*i+18].E],
+       [data[30*i+19].C,data[30*i+19].D,data[30*i+19].E],
+        [data[30*i+20].C,data[30*i+20].D,data[30*i+20].E],
+          [data[30*i+21].C,data[30*i+21].D,data[30*i+21].E],
+            [data[30*i+22].C,data[30*i+22].D,data[30*i+22].E],
+            [data[30*i+23].C,data[30*i+23].D,data[30*i+23].E],
+              [data[30*i+24].C,data[30*i+24].D,data[30*i+24].E],
+              [data[30*i+25].C,data[30*i+25].D,data[30*i+25].E],
+                [data[30*i+26].C,data[30*i+26].D,data[30*i+26].E],
+                  [data[30*i+27].C,data[30*i+27].D,data[30*i+27].E],
+                    [data[30*i+28].C,data[30*i+28].D,data[30*i+28].E],
+                    
+      ] };
+      exampleData.push(newStudent);
+      picLinks.push(data[30*i+5].I);
+  }
+  
+  
+          // Iterate and create 3 tables for each student
+          exampleData.forEach((studentData,index) => {
+              const studentDiv = document.createElement('div');
+              studentDiv.className = `studentTables student${index + 1}`;
+              const profilePic=document.createElement('img');
+              profilePic.src=picLinks[index];
+              profilePic.alt="";
+           studentDiv.appendChild(profilePic);
+              tablesDiv.appendChild(studentDiv);
+  
+              // Create 3 tables per student
+              for (let i = 1; i <= 3; i++) {
+                  const id = `table${index + 1}_${i}`;
+                  const className = `tableClass${i}`;
+                  const data = studentData[`data${i}`];
+  
+                  const table = createTable(id, className, data);
+                  studentDiv.appendChild(table);
+              }
+          });
+  
+  
+      }
+     );
