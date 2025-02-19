@@ -23,6 +23,7 @@ async function getUsers() {
   
       //  totalStudent
       const totalStudent=parseInt(data[2].F);
+      document.getElementById('studentNumber').innerText=totalStudent;
       //student list
       let studentNDiv=document.getElementById('studentNDiv');
   
