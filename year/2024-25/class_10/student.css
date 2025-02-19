@@ -3,7 +3,7 @@ padding: 0;
 }
 
 
-#studentNDiv{display:inline-block;
+#studentNDiv{display: flex;
   background-color: rgb(122, 121, 119);
   width: 100%;
  font-size: 20px;
@@ -43,18 +43,24 @@ color: rgb(45, 224, 66);}
   overflow-y:none;
 }
 #studentNDiv button{
-  background: linear-gradient(to right,red,yellow,green);
+  background: linear-gradient(to right,red,yellow,rgb(31, 235, 48));
   background-clip: text;
   color: transparent;
   border: 1px solid white;
   border-radius: 20%;
-  box-shadow: 0 0 20px whitesmoke inset;
+  box-shadow: 0 0 20px rgb(97, 199, 218) inset;
   margin: 5px;
   margin-left: 10px;
 font-weight:bolder;
 padding: 5px;
 font-size: 20px;
 font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#studentNDiv button:hover{
+  background: linear-gradient(to right,rgb(26, 218, 26),yellow,red);
+  background-clip: text;
+  box-shadow: 0 0 20px rgb(179, 20, 73) inset;
+  color: transparent;
 }
 
 

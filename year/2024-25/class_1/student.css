@@ -56,7 +56,10 @@
   font-size: 20px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   }
-  
+  #studentNDiv button:hover{
+    background: linear-gradient(to right,rgb(179, 47, 7),yellow,rgb(20, 136, 5));
+    box-shadow: 0 0 20px rgb(173, 8, 8) inset;
+  }
   
   #tablesDiv{color: rgb(212, 59, 189);
   width: 100%;
