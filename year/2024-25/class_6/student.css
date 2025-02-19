@@ -25,6 +25,7 @@
     font-family: Verdana, Geneva, Tahoma, sans-serif;}
   
     #studentNumber{float: right;
+      min-width: 50px;
       margin-right: 12px;
       background: rgb(227, 18, 95);
       background-clip: text;
