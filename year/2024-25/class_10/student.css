@@ -62,14 +62,13 @@ font-family: Verdana, Geneva, Tahoma, sans-serif;
   box-shadow: 0 0 20px purple inset;
   color: transparent;
 margin-bottom:0;
-border:1px solid purple;
+border:1px solid mediumpurple;
 border-radius:2px;
 }
 
 
 #tablesDiv{color: rgb(212, 59, 189);
 width: 100%;
-border: 1px solid mediumseagreen;
   text-align: center;
   font-size: 14px;
   font-weight: bold;
