@@ -3,21 +3,43 @@ padding: 0;
 }
 
 
-#studentNDiv{display: flex;
+#studentNDiv{display:inline-block;
   background-color: rgb(122, 121, 119);
-  width: 98%;
-  margin-left: 1%;
+  width: 100%;
  font-size: 20px;
 color: rgb(45, 224, 66);}
 
-#studentNDiv .title{margin-left:2px;
+.title{margin-left:2px;
+  font-size: 20px;
+  padding: 5px;
+  background: rgb(212, 59, 189);
+    background-clip: text;
+    color: transparent;
+    border: 1px solid white;
+    border-radius: 20%;
+    box-shadow: 0 0 10px whitesmoke inset;
+  padding: 5px;
+  font-size: 20px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  writing-mode: vertical-rl;
-  text-orientation: upright;}
+  text-align: center;
+  font-weight: bold;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;}
+
+  #studentNumber{float: right;
+    margin-right: 12px;
+    background: rgb(227, 18, 95);
+    background-clip: text;
+    box-shadow: 0 0 10px whitesmoke inset;
+    border: 1px solid white;
+    border-radius: 20%;
+    color: transparent;
+  font-size: 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
 
 .sList{display:flex;
-  overflow-x:scroll;
-  overflow-y: auto;
+  overflow-x:auto;
+  overflow-y:none;
 }
 #studentNDiv button{
   background: linear-gradient(to right,red,yellow,green);
@@ -25,10 +47,9 @@ color: rgb(45, 224, 66);}
   color: transparent;
   border: 1px solid white;
   border-radius: 20%;
-  box-shadow: 0 0 10px whitesmoke inset;
+  box-shadow: 0 0 20px whitesmoke inset;
   margin: 5px;
   margin-left: 10px;
-  width: auto;
 padding: 5px;
 font-size: 20px;
 font-family: Verdana, Geneva, Tahoma, sans-serif;
