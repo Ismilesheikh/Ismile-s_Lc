@@ -56,18 +56,15 @@ padding: 5px;
 font-size: 20px;
 font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-#studentNDiv button:hover{
-  background: linear-gradient(to right,rgb(26, 218, 26),yellow,red);
-  background-clip: text;
-  box-shadow: 0 0 20px purple inset;
-  color: transparent;
+#studentNDiv.active{background:purple ;
+box-shadow: 0 0 20px purple inset;
+color:white;
 margin-bottom:0;
 border:1px solid purple;
 border-radius:2px;
 }
-.active{background: purple;
-  box-shadow: 0 0 20px rgb(234, 233, 234) inset;
-  color: greenyellow;}
+
+
 
 #tablesDiv{color: rgb(212, 59, 189);
 width: 100%;
@@ -115,13 +112,13 @@ margin-top: 5px;
   border-radius: 50px;
   box-shadow: 0 0 7px white inset;
 }
-  
+
 .tableClass2{width:98%;
 margin-left: 1%;
   margin-bottom: 20px;
   border: 2px solid green;
   border-radius: 10px;
-  
+
 }
 
 .tableClass2 td{
