@@ -65,7 +65,9 @@ margin-bottom:0;
 border:1px solid purple;
 border-radius:2px;
 }
-
+.active{background: purple;
+  box-shadow: 0 0 20px rgb(234, 233, 234) inset;
+  color: greenyellow;}
 
 #tablesDiv{color: rgb(212, 59, 189);
 width: 100%;

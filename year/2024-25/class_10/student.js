@@ -60,15 +60,7 @@ async function getUsers() {
           document.querySelector(`.studentTables.student${index+1}`).style.display = 'block';
       });
   });
-  
-    for(let i=0;i<=totalStudent-1;i++){
-document.getElementById(`student${i}`).addEventListener('click', () => {
-  document.getElementById(`student${i}`).style.border="2px solid red";
 
-    });
-      
-    }
-  
   
           // Function to create a table element
           function createTable(id, className, data) {
