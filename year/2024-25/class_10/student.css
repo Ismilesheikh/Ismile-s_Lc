@@ -56,13 +56,14 @@ padding: 5px;
 font-size: 20px;
 font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-#studentNDiv.active{background:purple ;
+#studentNDiv button.active{background:purple ;
 box-shadow: 0 0 20px purple inset;
 color:white;
 margin-bottom:0;
 border:1px solid purple;
-border-radius:2px;
+border-radius:10px 10px 0 0;
 }
+
 
 
 
