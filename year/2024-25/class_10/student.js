@@ -6,33 +6,33 @@ async function getUsers() {
           method: 'GET',
         },
       );
-  
+
       if (!response.ok) {
         throw new Error(`Error! status: ${response.status}`);
       }
-  
+
       const data = await response.json();
-  
+
       return data;
     } catch (error) {
       console.log(error);
     }
   }
-  
+
   getUsers().then(data => {
-  
+
       //  totalStudent
       const totalStudent=parseInt(data[2].F);
       document.getElementById('studentNumber').innerText=totalStudent;
       //student list
       let studentNDiv=document.getElementById('studentNDiv');
-  
+
       let sList=document.createElement('div');
       sList.className='sList';
       studentNDiv.appendChild(sList);
-  
+
   const studentNames = []; 
-  
+
   function getStudentNames(sdat) {
       studentNames.push(sdat);
   }
@@ -40,8 +40,8 @@ async function getUsers() {
       let sdat=data[30*i+5].D;
       let sName=getStudentNames(sdat);
   }
-  
-  
+
+
   // Example student names
    studentNames.forEach((studentName,index)=>{
       let sItem=document.createElement('button');
@@ -50,24 +50,27 @@ async function getUsers() {
       sItem.className=`student${index}`;
       sList.appendChild(sItem);
   });
-  
+
   document.querySelectorAll('.sList button').forEach((button, index) => {
       button.addEventListener('click', () => {
+        document.querySelectorAll('.sList button').forEach((btn)=> {btn.classList.remove('active')});
           document.querySelectorAll('.studentTables').forEach((studentDiv) => {
               studentDiv.style.display = 'none';
           });
-  
+
           document.querySelector(`.studentTables.student${index+1}`).style.display = 'block';
+          document.querySelector(`.student${index}`).classList.add('active');
       });
+      
   });
 
-  
+
           // Function to create a table element
           function createTable(id, className, data) {
               const table = document.createElement('table');
               table.id = id;
               table.className = className;
-  
+
               data.forEach((rowData ,rowIndex)=> {
                   const row = document.createElement('tr');
                   rowData.forEach((cellData,cellIndex) => {
@@ -79,10 +82,10 @@ async function getUsers() {
                   });
                   table.appendChild(row);
               });
-  
+
               return table;
           }
-  
+
           // Example data for students
           const exampleData = [];
           const picLinks=[];
@@ -103,13 +106,13 @@ async function getUsers() {
                 [data[30*i+26].C,data[30*i+26].D,data[30*i+26].E],
                   [data[30*i+27].C,data[30*i+27].D,data[30*i+27].E],
                     [data[30*i+28].C,data[30*i+28].D,data[30*i+28].E],
-                    
+
       ] };
       exampleData.push(newStudent);
       picLinks.push(data[30*i+5].I);
   }
-  
-  
+
+
           // Iterate and create 3 tables for each student
           exampleData.forEach((studentData,index) => {
               const studentDiv = document.createElement('div');
@@ -119,18 +122,18 @@ async function getUsers() {
               profilePic.alt="";
            studentDiv.appendChild(profilePic);
               tablesDiv.appendChild(studentDiv);
-  
+
               // Create 3 tables per student
               for (let i = 1; i <= 3; i++) {
                   const id = `table${index + 1}_${i}`;
                   const className = `tableClass${i}`;
                   const data = studentData[`data${i}`];
-  
+
                   const table = createTable(id, className, data);
                   studentDiv.appendChild(table);
               }
           });
-  
-  
+
+
       }
      );
