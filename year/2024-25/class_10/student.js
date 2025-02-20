@@ -61,7 +61,13 @@ async function getUsers() {
       });
   });
   
+    for(let i=0;i<=totalStudent-1;i++){
+document.querySelector(`.student${i}`).addEventListener('click', () => {
     
+      });
+  
+      
+    }
   
   
           // Function to create a table element
