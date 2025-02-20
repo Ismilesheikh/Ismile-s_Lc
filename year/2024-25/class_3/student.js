@@ -52,13 +52,19 @@ async function getUsers() {
   });
   
   document.querySelectorAll('.sList button').forEach((button, index) => {
-      button.addEventListener('click', () => {
-          document.querySelectorAll('.studentTables').forEach((studentDiv) => {
-              studentDiv.style.display = 'none';
-          });
+    button.addEventListener('click', () => {
+      // Remove the active class from all buttons and the body
+         button.classList.remove('active');
   
-          document.querySelector(`.studentTables.student${index+1}`).style.display = 'block';
+      // Add the active class to the clicked button and the body
+      button.classList.add('active');
+  
+      document.querySelectorAll('.studentTables').forEach((studentDiv) => {
+        studentDiv.style.display = 'none';
       });
+  
+      document.querySelector(`.studentTables.student${index + 1}`).style.display = 'block';
+    });
   });
   
     
