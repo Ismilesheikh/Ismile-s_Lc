@@ -74,12 +74,14 @@ width: 100%;
   font-weight: bold;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   background:purple;
+border:1px solid purple;
 }
 
 .studentTables{background:rgb(56, 224, 194);
   width: 98%;
   margin-left: 1%;
   margin-right: 1%;
+margin-top:25px;
   margin-bottom:10px;
   border: 1px solid darkgray;
   box-shadow: 0 0 10px white;
