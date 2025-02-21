@@ -178,8 +178,8 @@ height:90px;
     box-shadow:0 0 20px rgb(236, 231, 231);
     border-radius: 5px ;}
 
-    #newsContainer{width: 96%;
-    margin-left: 2%;}
+    #newsContainer{width: 98%;
+    margin-left: 1%;}
 
     .newsTitle{text-align: center;}
 
@@ -195,8 +195,8 @@ height:90px;
         color: rgb(151, 101, 7);
         border-radius: 5px;
         border: 1px solid rgb(182, 177, 177);
-        background-color: rgb(92, 215, 231);
-        box-shadow: 2px 2px 2px 2px gray;
+        background-color: white;
+        box-shadow: 0 0 0 10px white;
     }
 
     .secTitle{margin-top: 5px;
