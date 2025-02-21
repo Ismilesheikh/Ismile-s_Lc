@@ -22,19 +22,22 @@ async function getUsers() {
   getUsers().then(data => {
 
     
-function news(newsLink,newsText){
+function news(newsLink,newsText,newsNo){
 let newsContainer = document.getElementById('newsContainer');
 let newsLinks = document.createElement('a');
 newsLinks.href = newsLink;
 newsContainer.appendChild(newsLinks);
 const newsButton = document.createElement('button');
-newsButton.innerText=newsText;
+const buttonText = document.createElement('p');
+buttonText.innerHTML = `${newsNo}.${newsText}`;
+newsButton.appendChild(buttonText);
 newsLinks.appendChild(newsButton);
 
 }
-for(let i=1;i<=5;i++){
-let newsf=news(data[i+4].NLink,data[i+4].News);
-  
+let totalNews =1;
+
+for(let i=1;i<=totalNews;i++){
+let newsf=news(data[i+4].NLink,data[i+4].News,i);
 }
 
 
