@@ -1,7 +1,7 @@
 async function getUsers() {
     try {
       const response = await fetch(
-        'https://script.google.com/macros/s/AKfycbzapSJTwjJDHs0Bm9iEPfBpe1NdflQ2OPUSSDqvbWqGLu_a4zR9W4-UhYejtShBgLrV/exec',
+        'https://script.google.com/macros/s/AKfycbypNo_Wz173Neeo6c43MTJ7efBk76A224p0mDcj54qZrmDlrIgzwwXDRkiLBHFXvGjf/exec',
         {
           method: 'GET',
         },
