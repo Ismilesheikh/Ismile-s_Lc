@@ -24,6 +24,12 @@ color: rgb(45, 224, 66);}
   font-weight: bold;
   font-family: Verdana, Geneva, Tahoma, sans-serif;}
 
+  .className{margin-left: 20px;
+    color: royalblue;
+    
+  
+  }
+
   #studentNumber{float: right;
     min-width: 50px;
     margin-right: 12px;
