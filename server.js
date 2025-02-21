@@ -5,6 +5,7 @@ const bodyParser = require('body-parser');
 const path = require('path');
 const bcrypt = require('bcrypt');
 const helmet = require('helmet');
+const fetch = require('node-fetch');
 const app = express();
 const PORT = process.env.PORT || 3001; // Change the port here
 
@@ -36,6 +37,16 @@ app.post('/validate-password', (req, res) => {
     res.json({ success: true });
   } else {
     res.json({ success: false });
+  }
+});
+
+app.get('/api/users', async (req, res) => {
+  try {
+    const response = await fetch('https://script.google.com/macros/s/AKfycbwbyuo39cBuZktxPORqNnunW2SSOb18VaeREza-wwLQ9YYrL77cQIG1E2cEOaNF3RfO/exec');
+    const data = await response.json();
+    res.json(data);
+  } catch (error) {
+    res.status(500).json({ error: 'Failed to fetch data' });
   }
 });
 
