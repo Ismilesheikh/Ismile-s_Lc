@@ -183,12 +183,13 @@ height:90px;
 
     .newsTitle{text-align: center;}
 
-    .news button{text-align: left;
+    #newsContainer button{text-align: left;
+        width:96%;
         font-size: 20px;
         font-family: Verdana, Geneva, Tahoma, sans-serif;
         font-weight: bold;
-        margin-left: 10px;
-        margin-right: 10px;
+        margin-left:2%;
+        margin-right:2%;
         margin-top: 10px;
         margin-bottom: 5px;
         color: rgb(151, 101, 7);
