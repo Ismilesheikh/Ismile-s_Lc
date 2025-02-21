@@ -1,4 +1,27 @@
+async function getUsers() {
+    try {
+      const response = await fetch(
+        'https://script.google.com/macros/s/AKfycbzJMGCKALdtkvldIHxWeY7FP79ebIhjuHAiBepNetsnzCpm2DZF3o6QkXsAqIgfQjek/exec',
+        {
+          method: 'GET',
+        },
+      );
 
+      if (!response.ok) {
+        throw new Error(`Error! status: ${response.status}`);
+      }
+
+      const data = await response.json();
+
+      return data;
+    } catch (error) {
+      console.log(error);
+    }
+  }
+
+  getUsers().then(data => {
+
+    
 function news(newsLink,newsText){
 let newsContainer = document.getElementById('newsContainer');
 let newsLinks = document.createElement('a');
@@ -9,9 +32,14 @@ newsButton.innerText=newsText;
 newsLinks.appendChild(newsButton);
 
 }
+for(let i=1;i<=5;i++){
+let newsf=news(data[i+4].NLink,data[i+4].News);
+  
+}
 
-let test=news('https://www.google.com','Google');
 
+      }
+     );
 
 function UpdateTime() {
 
