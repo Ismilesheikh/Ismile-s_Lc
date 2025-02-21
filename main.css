@@ -147,7 +147,7 @@ height:90px;
                   font-size:25px;
 }
 
-    .notice p{text-align: left;
+    .notice button{text-align: left;
         font-size: 20px;
         font-weight: bold;
         margin-left: 10px;
@@ -183,7 +183,7 @@ height:90px;
 
     .newsTitle{text-align: center;}
 
-    .news p{text-align: left;
+    .news button{text-align: left;
         font-size: 20px;
         font-family: Verdana, Geneva, Tahoma, sans-serif;
         font-weight: bold;
