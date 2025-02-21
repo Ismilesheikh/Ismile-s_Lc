@@ -178,6 +178,9 @@ height:90px;
     box-shadow:0 0 20px rgb(236, 231, 231);
     border-radius: 5px ;}
 
+    #newsContainer{width: 96%;
+    margin-left: 2%;}
+
     .newsTitle{text-align: center;}
 
     .news p{text-align: left;

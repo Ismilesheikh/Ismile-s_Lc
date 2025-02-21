@@ -1,4 +1,18 @@
 
+function news(newsLink,newsText){
+let newsContainer = document.getElementById('newsContainer');
+let newsLinks = document.createElement('a');
+newsLinks.href = newsLink;
+newsContainer.appendChild(newsLinks);
+const newsButton = document.createElement('button');
+newsButton.innerText=newsText;
+newsLinks.appendChild(newsButton);
+
+}
+
+let test=news('https://www.google.com','Google');
+
+
 function UpdateTime() {
 
 let x = new Date();
