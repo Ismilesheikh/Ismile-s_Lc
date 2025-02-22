@@ -37,7 +37,7 @@ newsLinks.appendChild(newsButton);
 let totalNews =data[23].Total;
 
 for(let i=1;i<=totalNews;i++){
-let newsf=news(data[i+22].Link,data[i+22].Text,i);
+let newsf=news(data[i+23].Link,data[i+23].Text,i);
 }
 
 
