@@ -34,10 +34,10 @@ newsButton.appendChild(buttonText);
 newsLinks.appendChild(newsButton);
 
 }
-let totalNews =1;
+let totalNews =data[23].Total;
 
 for(let i=1;i<=totalNews;i++){
-let newsf=news(data[i+4].NLink,data[i+4].News,i);
+let newsf=news(data[i+22].Link,data[i+22].Text,i);
 }
 
 
