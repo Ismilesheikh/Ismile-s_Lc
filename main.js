@@ -46,7 +46,7 @@ let totalNotice=data[3].Total;
 function notice(noticeLink,noticeText,noticeNo){
 let noticeContainer = document.getElementById('noticeContainer');
 let noticeLinks = document.createElement('a');
-newsLinks.href = noticeLink;
+noticeLinks.href = noticeLink;
 noticeContainer.appendChild(noticeLinks);
 const noticeButton = document.createElement('button');
 noticeButton.innerText=`${noticeNo}.${noticeText}`;
