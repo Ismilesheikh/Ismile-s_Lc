@@ -41,6 +41,24 @@ let newsf=news(data[i+22].Link,data[i+22].Text,i);
 }
 
 
+let totalNotice=data[3].Total;
+
+function notice(noticeLink,noticeText,noticeNo){
+let newsContainer = document.getElementById('noticeContainer');
+let noticeLinks = document.createElement('a');
+newsLinks.href = noticeLink;
+noticeContainer.appendChild(noticeLinks);
+const noticeButton = document.createElement('button');
+noticeButton.innerText=`${noticeNo}.${noticeText}`;
+noticeLinks.appendChild(noticeButton);
+
+}
+for(let i=1;i<=totalNotice;i++){
+let noticef=notice(data[i+2].Link,data[i+2].Text,i);
+  
+}
+
+
       }
      );
 
