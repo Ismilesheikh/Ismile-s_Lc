@@ -44,7 +44,7 @@ let newsf=news(data[i+22].Link,data[i+22].Text,i);
 let totalNotice=data[3].Total;
 
 function notice(noticeLink,noticeText,noticeNo){
-let newsContainer = document.getElementById('noticeContainer');
+let noticeContainer = document.getElementById('noticeContainer');
 let noticeLinks = document.createElement('a');
 newsLinks.href = noticeLink;
 noticeContainer.appendChild(noticeLinks);
