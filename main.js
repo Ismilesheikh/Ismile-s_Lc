@@ -21,6 +21,26 @@ async function getUsers() {
 
   getUsers().then(data => {
 
+const time=new Date();
+let sec = time.getSeconds();
+console.log(sec);
+
+    let mainContainer = document.getElementById('main');
+    let mainImage = document.createElement('img');
+    if(sec>40){
+      mainImage.src =data[5].Image;
+    }
+    else if(sec>20){
+      mainImage.src = data[6].Image;
+    }
+
+    else{
+      mainImage.src = data[7].Image;
+    }
+    mainImage.style.width = "100%";
+    mainImage.style.height = "150px";
+    mainContainer.appendChild(mainImage);
+
     
 function news(newsLink,newsText,newsNo){
 let newsContainer = document.getElementById('newsContainer');
@@ -49,7 +69,9 @@ let noticeLinks = document.createElement('a');
 noticeLinks.href = noticeLink;
 noticeContainer.appendChild(noticeLinks);
 const noticeButton = document.createElement('button');
-noticeButton.innerText=`${noticeNo}.${noticeText}`;
+const buttonText = document.createElement('p');
+buttonText.innerHTML = `${noticeNo}.${noticeText}`;
+noticeButton.appendChild(buttonText);
 noticeLinks.appendChild(noticeButton);
 
 }
