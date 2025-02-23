@@ -93,7 +93,7 @@ height:90px;
         margin-left: 1%;
         margin-right: 1%;
         border-radius: 5px;
-        border: 2px solid rgb(223, 115, 223);}
+        box-shadow:0 0 5px white;}
 
 
         a{text-decoration: none;}
