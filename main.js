@@ -37,7 +37,6 @@ console.log(sec);
     else{
       mainImage.src = data[7].Image;
     }
-    mainImage.style.width = "100%";
     mainImage.style.height = "150px";
     mainContainer.appendChild(mainImage);
 
