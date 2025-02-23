@@ -88,12 +88,13 @@ height:90px;
 
 
     .myname{font-size: 18px;}
-    .main img{display: inline-block;
+    .main img{
         width: 98%;
         margin-left: 1%;
         margin-right: 1%;
         margin-top:5px;
         border-radius: 10px;
+        border:1px solid white;
         box-shadow:0 0 5px white;}
 
 
