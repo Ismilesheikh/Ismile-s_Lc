@@ -75,18 +75,19 @@ async function getUsers() {
               table.className = className;
   
               data.forEach((rowData ,rowIndex)=> {
-                  const row = document.createElement('tr');
-                  rowData.forEach((cellData,cellIndex) => {
-                      const cell = document.createElement('td');
-                      cell.id = `${id}_row${rowIndex + 1}_td${cellIndex + 1}`;
-  cell.className = `${id}_td${cellIndex + 1}`;
-                      cell.innerText = cellData;
-                      row.appendChild(cell);
-                  });
-                  table.appendChild(row);
-              });
-  
-              return table;
+                const row = document.createElement('tr');
+                row.className=`row${rowIndex+1}`;
+                rowData.forEach((cellData,cellIndex) => {
+                    const cell = document.createElement('td');
+                    cell.id = `${id}_row${rowIndex + 1}_td${cellIndex + 1}`;
+               cell.className = `td${cellIndex + 1}`;
+                    cell.innerText = cellData;
+                    row.appendChild(cell);
+                });
+                table.appendChild(row);
+            });
+
+            return table;
           }
   
           // Example data for students
