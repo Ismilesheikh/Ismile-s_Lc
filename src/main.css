@@ -4,6 +4,35 @@ body{
     background: linear-gradient( 180.7deg,  rgb(245, 59, 139) 2.5%, rgba(79,255,255,1) 97.7% );
 }
 @media screen and (max-width:600px){
+     #picWindow{
+    position:fixed;
+    top:0px;
+    width: 98%;
+    margin-left: 1%;
+    margin-right: 1%;
+    height:98%;
+    border-radius :5px;
+    border:1px solid white;
+    box-shadow: 0 0 5px whitesmoke;
+    display:none;
+    background:rgba(0, 0, 0, 0.7);
+    
+  }
+  
+  #picWindow img{
+    width:98%;
+    margin-top: 40px;
+    height: 450px;
+    margin-left: 1%;
+    margin-right:1%;
+  }
+  
+  .bi-x{float: right;
+    font-size: 35px;
+    font-weight:bold;
+    color: whitesmoke;
+  }
+  
     .nav{display:block;
         width: 100%;
         align-items: center;
@@ -23,10 +52,11 @@ body{
         margin-right: 2px;
         align-items: center;
        }
-.profile_img img{
+.profile img{
   width:90px;
 height:90px;
 }
+
 
  .nav ul li{display:none;
         text-align: center;
