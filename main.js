@@ -32,7 +32,7 @@ async function getUsers() {
   getUsers().then(data => {
 
 const profile_Img =document.createElement('Img');
-profile_Img.src=data[5].profileImgage;
+profile_Img.src=data[5].profileImage;
 profile.appendChild(profile_Img);
 const winPic=document.createElement('img');
 winPic.src=profile_Img.src;
