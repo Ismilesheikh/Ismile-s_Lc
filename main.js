@@ -1,3 +1,13 @@
+const picWindow=document.getElementById("picWindow");
+let profileButton = document.getElementById('profile');
+
+profileButton.addEventListener('click', function() {
+  picWindow.style.display = 'block';
+});
+
+document.getElementById('back').addEventListener('click',function() {
+  picWindow.style.display='none';
+})
 async function getUsers() {
     try {
       const response = await fetch(
@@ -20,6 +30,13 @@ async function getUsers() {
   }
 
   getUsers().then(data => {
+
+const profile_Img =document.createElement('Img');
+profile_Img.src=data[5].profileImgage;
+profile.appendChild(profile_Img);
+const winPic=document.createElement('img');
+winPic.src=profile_Img.src;
+picWindow.appendChild(winPic);
 
 const time=new Date();
 let sec = time.getSeconds();
