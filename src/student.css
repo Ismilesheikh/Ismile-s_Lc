@@ -87,7 +87,7 @@ border:1px solid purple;
   width: 98%;
   margin-left: 1%;
   margin-right: 1%;
-margin-top:25px;
+  margin-top:25px;
   margin-bottom:10px;
   border: 1px solid darkgray;
   box-shadow: 0 0 10px white;
@@ -123,8 +123,8 @@ margin-top: 5px;
 .tableClass2{width:98%;
 margin-left: 1%;
   margin-bottom: 20px;
-  border: 2px solid green;
-  border-radius: 10px;
+  border: 1px solid green;
+  border-radius: 5px;
 
 }
 
@@ -132,7 +132,7 @@ margin-left: 1%;
   border: 1px solid green;
   font-size: 13px;
   border: 2px solid green;
-border-radius: 10px;
+border-radius: 5px;
 }
 
 .tableClass3{width:96%;
@@ -147,8 +147,10 @@ border-radius: 10px;
   border: 1px solid green;
 }
 
+.tableClass2 td{color: rgb(237, 240, 241);
+  background: rgb(243, 2, 171);
+}
 
-
-.table1_2_td1{
-  width:100px;
+.tableClass2 .td7{color: rgb(247, 9, 9);
+  background: rgb(200, 243, 7);
 }
