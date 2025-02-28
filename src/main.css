@@ -418,9 +418,9 @@ padding:10px;
 
 
     .myname{font-size: 18px;}
-    .main img{position:absolute;
-        right: 10px;
-        width: 45%;
+    .main img{
+        float: right;
+        width: 48%;
         height: 400px;
         margin-left: 1%;
         margin-top: 10px;
