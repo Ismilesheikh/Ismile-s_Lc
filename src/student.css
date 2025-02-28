@@ -97,7 +97,7 @@ border:1px solid purple;
 
 
 
-.tableClass1{width:60%;
+.tableClass1{min-width:60%;
   margin-bottom: 20px;
   border: 2px solid purple;
   margin-top: 10px;
