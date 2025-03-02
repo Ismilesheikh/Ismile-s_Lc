@@ -165,7 +165,7 @@ border-radius: 5px;
          }
 
     .notice{display:inline-block;
-       overflow-y: auto;
+       
         margin-top: 5px;
         margin-bottom: 10px;
         margin-left: 3%;
@@ -187,7 +187,7 @@ border-radius: 5px;
         margin-bottom: 10px;
         margin-left: 3%;
     margin-right: 3%;
-    overflow-y:auto;
+    
     width:94%;
     height:300px;
     border: 1px gold solid;
@@ -195,11 +195,17 @@ border-radius: 5px;
     border-radius: 5px;}
 
     #newsContainer{width: 98%;
+    overflow-y:auto;
+    height:250px;
     margin-left: 1%;}
 
     .newsTitle{text-align: center;
         box-shadow: 0 0 10px rgb(250, 249, 249) inset;
     }
+#noticeContainer{
+overflow-y:auto;
+    height:200px;
+}
 #noticeContainer button{text-align: left;
         display: inline-flex;
         width:96%;
