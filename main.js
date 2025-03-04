@@ -102,7 +102,7 @@ let noticef=notice(data[i+2].Link,data[i+2].Text,i);
 function UpdateTime() {
 
 let x = new Date();
-let y = new Date("2025-03-02 15:01:00");
+let y = new Date("2025-03-03 20:47:00");
 let hour=parseInt( (Number(x)-Number(y))/(1000*60*60));
 let min =parseInt( (Number(x)-Number(y))/(1000*60))-hour*60;
 let sec =parseInt( (Number(x)-Number(y))/(1000))-hour*60*60-min*60;
