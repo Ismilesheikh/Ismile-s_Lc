@@ -96,6 +96,37 @@ let noticef=notice(data[i+2].Link,data[i+2].Text,i);
 }
 
 
+let invest=document.getElementById('invest');
+function investInfo(buttonId,investText){
+const investButton=document.createElement('button');
+investButton.id=buttonId;
+investButton.className=buttonId;
+investButton.innerText=investText;
+invest.appendChild(investButton);}
+
+for(let i=1;i<=4;i++){
+  let investInfo1=investInfo(`button${i}`,data[i+4].In)
+  
+}
+  if(Number(data[7].In)<0){
+    document.getElementById('button3').style.color='red';
+    document.getElementById('button4').style.color='red';
+    
+  }
+  else {
+    document.getElementById('button3').style.color='green';
+    document.getElementById('button4').style.color='green';
+  }
+  
+  document.getElementById('myName').addEventListener('click',function() {
+    document.getElementById('myInfo').style.display='block';
+  })
+  
+  document.getElementById('back2').addEventListener('click', function() {
+  document.getElementById('myInfo').style.display = 'none';
+})
+
+
       }
      );
 
