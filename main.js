@@ -104,7 +104,7 @@ investButton.className=buttonId;
 investButton.innerText=investText;
 invest.appendChild(investButton);}
 
-for(let i=1;i<=4;i++){
+for(let i=1;i<=parseInt(data[4].In);i++){
   let investInfo1=investInfo(`button${i}`,data[i+4].In)
   
 }
