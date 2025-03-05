@@ -22,6 +22,10 @@ body{
   color: white ;
   box-shadow: 0 0 5px white;
 }
+.invest .button5{
+width:96%;
+margin-left:2%;
+}
 
 #myInfo{display: none;
   width: 100%;
