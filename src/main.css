@@ -6,7 +6,7 @@ body{
 
 
 #infoDiv{
-  margin-top:35px;
+  margin-top:40px;
   width: 96%;
   margin-left: 2%;
   border: 1px solid whitesmoke;
@@ -26,8 +26,12 @@ body{
 }
 
 
-.invest{margin-top:35px;
-  width: 100%;
+.invest{margin-top:30px;
+  width: 96%;
+  margin-left:2%;
+border:1px solid white;
+border-radius:10px;
+box-shadow:0 0 10px white inset;
   height: 100px;
   text-align: center;
   color: white;
