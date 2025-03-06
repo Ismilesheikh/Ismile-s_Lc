@@ -95,6 +95,21 @@ let noticef=notice(data[i+2].Link,data[i+2].Text,i);
   
 }
 
+let infoDiv=document.getElementById('infoDiv');
+
+ function myInfo(infoText,infoId){
+  const infoP=document.createElement('p');
+  infoP.innerText=infoText;
+  infoP.className=infoId;
+  infoDiv.appendChild(infoP);
+}
+
+let totalInfo=data[6].totalInfo;
+for(let i=1;i<=totalInfo;i++){
+  
+  let myInfoF=myInfo(data[i+5].infoText,data[i+5].infoId);
+}
+
 
 let invest=document.getElementById('invest');
 function investInfo(buttonId,investText){
