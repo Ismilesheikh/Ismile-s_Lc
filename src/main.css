@@ -5,6 +5,27 @@ body{
 }
 
 
+#infoDiv{
+  margin-top:35px;
+  width: 96%;
+  margin-left: 2%;
+  border: 1px solid whitesmoke;
+  border-radius: 10px;
+  box-shadow: 0 0 10px whitesmoke inset;
+  
+}
+#infoDiv p{
+  color: whitesmoke;
+  margin-top: 5px;
+  margin-left: 10px;
+  margin-bottom: 5px;
+}
+.Info{text-align: center;
+  text-decoration: underline whitesmoke;
+  font-weight: bold;
+}
+
+
 .invest{margin-top:35px;
   width: 100%;
   height: 100px;
