@@ -96,6 +96,10 @@ let noticef=notice(data[i+2].Link,data[i+2].Text,i);
 }
 
 let infoDiv=document.getElementById('infoDiv');
+const infoPic=document.createElement('img');
+  infoPic.src=data[6].profileImage;
+  infoDiv.appendChild(infoPic);
+
 
  function myInfo(infoText,infoId){
   const infoP=document.createElement('p');
