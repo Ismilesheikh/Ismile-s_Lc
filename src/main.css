@@ -19,9 +19,16 @@ body{
   height: 80px;
   position: absolute;
   margin-right:5px;
-  margin-top:10px;
+  margin-top:25px;
   right:2%;
   border-radius: 50%;
+}
+.Info{text-align: center;
+  text-decoration: underline whitesmoke;
+  font-weight: bold;
+  color: #d41270;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 25px;
 }
 
 #infoDiv p{
@@ -29,10 +36,6 @@ body{
   margin-top: 5px;
   margin-left: 10px;
   margin-bottom: 5px;
-}
-.Info{text-align: center;
-  text-decoration: underline whitesmoke;
-  font-weight: bold;
 }
 
 
@@ -48,6 +51,7 @@ box-shadow:0 0 10px white inset;
 .invest button{
   width: 46%;
   margin-left: 2%;
+  margin-right: 2%;
   margin-top: 10px;
   margin-bottom:10px;
   font-size: 20px;
@@ -57,10 +61,7 @@ box-shadow:0 0 10px white inset;
   color: white ;
   box-shadow: 0 0 5px white;
 }
-.invest .button5{
-width:96%;
-margin-left:2%;
-}
+
 
 #myInfo{display: none;
   width: 100%;
@@ -68,6 +69,8 @@ margin-left:2%;
   background:rgba(0, 0, 0, 0.8);
   position: fixed;
   top: 0;
+  font-weight: bold;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 @media screen and (max-width:600px){
      #picWindow{
