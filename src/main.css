@@ -14,6 +14,15 @@ body{
   box-shadow: 0 0 10px whitesmoke inset;
   
 }
+
+#infoDiv img{width: 100px;
+  height: 100px;
+  position: absolute;
+  margin-right:5px;
+  margin-top:5px;
+  right:10px;
+}
+
 #infoDiv p{
   color: whitesmoke;
   margin-top: 5px;
