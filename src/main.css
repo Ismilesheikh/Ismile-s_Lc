@@ -225,12 +225,18 @@ border-radius: 5px;
             font-weight: bold;
             border-radius: 5px 100px ;
             font-family: Verdana, Geneva, Tahoma, sans-serif;
-            margin: 4px;   }
+            margin-left:4%;
+            margin-bottom: 5px;
+          margin-top: 5px;}
 
-         button:hover {
+         .but button:hover {
            background-position: right center; /* change the direction of the change here */
-           color: #fff;
+           color: #d808bc;
            text-decoration: none;
+           width: 40%;
+           margin-right: 4%;
+           margin-left:5%;
+
          }
 
     .notice{display:inline-block;
