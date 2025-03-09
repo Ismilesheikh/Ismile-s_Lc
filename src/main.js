@@ -56,7 +56,7 @@ console.log(sec);
     }
     mainContainer.appendChild(mainImage);
 
-    
+
 function news(newsLink,newsText,newsNo){
 let newsContainer = document.getElementById('newsContainer');
 let newsLinks = document.createElement('a');
@@ -92,8 +92,58 @@ noticeLinks.appendChild(noticeButton);
 }
 for(let i=1;i<=totalNotice;i++){
 let noticef=notice(data[i+2].Link,data[i+2].Text,i);
-  
+
 }
+
+let infoDiv=document.getElementById('infoDiv');
+const infoPic=document.createElement('img');
+  infoPic.src=data[6].profileImage;
+  infoDiv.appendChild(infoPic);
+
+
+ function myInfo(infoText,infoId){
+  const infoP=document.createElement('p');
+  infoP.innerText=infoText;
+  infoP.className=infoId;
+  infoDiv.appendChild(infoP);
+}
+
+let totalInfo=data[6].totalInfo;
+for(let i=1;i<=totalInfo;i++){
+
+  let myInfoF=myInfo(data[i+5].infoText,data[i+5].infoId);
+}
+
+
+let invest=document.getElementById('invest');
+function investInfo(buttonId,investText){
+const investButton=document.createElement('button');
+investButton.id=buttonId;
+investButton.className=buttonId;
+investButton.innerText=investText;
+invest.appendChild(investButton);}
+
+for(let i=1;i<=parseInt(data[4].In);i++){
+  let investInfo1=investInfo(`button${i}`,data[i+4].In)
+
+}
+  if(Number(data[7].In)<0){
+    document.getElementById('button3').style.color='red';
+    document.getElementById('button4').style.color='red';
+
+  }
+  else {
+    document.getElementById('button3').style.color='green';
+    document.getElementById('button4').style.color='green';
+  }
+
+  document.getElementById('myName').addEventListener('click',function() {
+    document.getElementById('myInfo').style.display='block';
+  })
+
+  document.getElementById('back2').addEventListener('click', function() {
+  document.getElementById('myInfo').style.display = 'none';
+})
 
 
       }
@@ -102,7 +152,7 @@ let noticef=notice(data[i+2].Link,data[i+2].Text,i);
 function UpdateTime() {
 
 let x = new Date();
-let y = new Date("2025-02-27 14:45:00");
+let y = new Date("2025-03-03 20:47:00");
 let hour=parseInt( (Number(x)-Number(y))/(1000*60*60));
 let min =parseInt( (Number(x)-Number(y))/(1000*60))-hour*60;
 let sec =parseInt( (Number(x)-Number(y))/(1000))-hour*60*60-min*60;
