@@ -153,7 +153,9 @@ function UpdateTime() {
 
 let x = new Date();
 let y = new Date("2025-03-03 20:47:00");
+let z = new Date("2025-03-09 12:57:00");
 let hour=parseInt( (Number(x)-Number(y))/(1000*60*60));
+let hour2=parseInt( (Number(x)-Number(z))/(1000*60*60));
 let min =parseInt( (Number(x)-Number(y))/(1000*60))-hour*60;
 let sec =parseInt( (Number(x)-Number(y))/(1000))-hour*60*60-min*60;
 let days=parseInt(hour/24);
@@ -182,7 +184,15 @@ else{secs=sec;}
 if(hour>7*24*30){document.getElementById('counter').innerHTML="It's Time to Cut You Hairs";}
 else
 {document.getElementById('counter').innerHTML='The Hours:'+ hours+ ':'+ mins +':'+secs;};
-document.getElementById('days').innerHTML=`Days : Hour 🎂 ${days} : ${hour-24*days}`;
-counter.style.color='green';};
+counter.style.color='green';
+
+if(hour2<7*24){document.getElementById('mas').innerHTML=hour2;
+  document.getElementById('mas').style.color='red';}
+
+else{document.getElementById('mas').innerHTML=`weldone its been ${hour2} hours`;
+document.getElementById('mas').style.color='green';}
+
+
+};
 
 setInterval(UpdateTime,1000);
