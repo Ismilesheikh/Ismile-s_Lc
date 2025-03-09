@@ -229,8 +229,7 @@ border-radius: 5px;
             margin-bottom: 5px;
           margin-top: 5px;}
 
-         .but button:hover {
-           background-position: right center; /* change the direction of the change here */
+         .but button:hover{
            color: #d808bc;
            text-decoration: none;
            width: 40%;
