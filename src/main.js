@@ -116,7 +116,7 @@ for(let i=1;i<=totalInfo;i++){
 
 
 let invest=document.getElementById('invest');
-
+function share(shareTexts){
 const shareDiv=document.createElement('div');
 shareDiv.className='shareDiv';
 shareTexts.forEach((shareText,index)=>{
