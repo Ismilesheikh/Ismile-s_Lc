@@ -133,6 +133,9 @@ border-bottom: 1px solid cornsilk;
         margin-right: 2px;
         align-items: center;
        }
+.profile{width:90px;
+height:90px;}
+
 .profile img{
   width:90px;
 height:90px;
