@@ -116,6 +116,25 @@ for(let i=1;i<=totalInfo;i++){
 
 
 let invest=document.getElementById('invest');
+
+const shareDiv=document.createElement('div');
+shareDiv.className='shareDiv';
+shareTexts.forEach((shareText,index)=>{
+const shareBut=document.createElement('button');
+shareBut.className='shareButton';
+shareBut.innerText=shareText;
+shareDiv.appendChild(shareBut);
+});
+  
+invest.appendChild(shareDiv);
+  
+}
+for (let i=0;i<parseInt(data[16].shareName);i++){
+let shareTexts=[data[i+18].shareName,data[i+18].sharePrice,data[i+18].totalSharePrice];
+  let sharef=share(shareTexts);
+}
+
+
 function investInfo(buttonId,investText){
 const investButton=document.createElement('button');
 investButton.id=buttonId;
