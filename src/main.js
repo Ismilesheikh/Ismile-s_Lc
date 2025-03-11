@@ -153,7 +153,7 @@ function UpdateTime() {
 
 let x = new Date();
 let y = new Date("2025-03-03 20:47:00");
-let z = new Date("2025-03-09 12:57:00");
+let z = new Date("2025-03-10 12:10:00");
 let hour=parseInt( (Number(x)-Number(y))/(1000*60*60));
 let hour2=parseInt( (Number(x)-Number(z))/(1000*60*60));
 let min =parseInt( (Number(x)-Number(y))/(1000*60))-hour*60;
