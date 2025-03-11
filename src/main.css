@@ -72,6 +72,18 @@ box-shadow:0 0 10px white inset;
   font-weight: bold;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+
+.shareDiv{margin-bottom: 10px;
+  border-bottom: 1px solid cornsilk;}
+.shareDiv button{
+width:30%;
+margin-left: 1%;
+border-bottom: 1px solid cornsilk;
+
+}
+
+
+
 @media screen and (max-width:600px){
      #picWindow{
     position:fixed;
