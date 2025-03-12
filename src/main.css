@@ -516,12 +516,14 @@ padding:10px;
 
 
         .nav ul{display:block;
-        transition: width 0.1s;
+          position: absolute;
+        transition: height 0.5s;
+        height:10;
         margin-left: 1px;
         font-size: 25px;
+        overflow: hidden;
         color: #111111;
-        border-radius: 5px 50px;
-        position: absolute;}
+        border-radius: 5px 50px;}
 
         .pContainer{
           margin-left: 0;
@@ -533,8 +535,9 @@ padding:10px;
         }
 
         .nav ul:hover{background: #77dfcd;
-          margin-top: 250px;
+          top: 0;
           width:30%;
+          min-height: 500px;
           box-shadow: 0 0 50px rgb(230, 106, 188);}
   
   
