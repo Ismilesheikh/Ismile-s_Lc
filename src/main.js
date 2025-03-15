@@ -205,7 +205,7 @@ else
 {document.getElementById('counter').innerHTML='The Hours:'+ hours+ ':'+ mins +':'+secs;};
 counter.style.color='green';
 
-if(hour2<7*24){document.getElementById('mas').innerHTML=hour2;
+if(hour2<7*24){document.getElementById('mas').innerHTML=`${hour2}<=>${7*24-hour2}`;
   document.getElementById('mas').style.color='red';}
 
 else{document.getElementById('mas').innerHTML=`Welldone its been ${parseInt(hour2/24)} days mean ✂️👦💇‍♂️`;
