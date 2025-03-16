@@ -83,8 +83,10 @@ border-bottom: 1px solid cornsilk;
 }
 
         .loader {
-                text-align: center;
                 
+                display:flex;
+              align-self: center;
+              justify-content: center;
                 position:fixed;
                 top: 50%;
                 width:60%;
