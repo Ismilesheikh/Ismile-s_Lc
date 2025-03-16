@@ -17,6 +17,9 @@
   } catch (error) {
     console.log(error);
   }
+  finally {
+    document.getElementById("loader").style.display = "none"; // Hide loader
+  }
 }
 
 function createQuestionElement(questionId, questionText, answers) {
