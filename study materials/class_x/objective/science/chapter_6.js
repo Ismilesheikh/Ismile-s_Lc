@@ -20,7 +20,7 @@ async function getUsers() {
 finally{
 document.getElementById('loader').style.display='none';}
 
-  }
+  
 }
 
 function createQuestionElement(questionId, questionText, answers,imgLinks) {
