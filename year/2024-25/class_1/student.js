@@ -21,7 +21,7 @@ async function getUsers() {
 finally{
 document.getElementById('loader').style.display='none';}
 
-  }
+  
   }
   
   getUsers().then(data => {
