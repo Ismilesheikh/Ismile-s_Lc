@@ -17,6 +17,9 @@ async function getUsers() {
     } catch (error) {
       console.log(error);
     }
+finally{
+document.getElementById('loader').style.display='none';
+}
   }
   
   getUsers().then(data => {

@@ -2,6 +2,31 @@
 padding: 0;
 }
 
+        .loader {
+
+                display:flex;
+              align-self: center;
+              justify-content: center;
+                position:fixed;
+                top: 45%;
+                width:60%;
+                margin-left:20%;
+              }
+
+
+.loader p{border: 6px solid #f3f3f3;
+                border-top: 6px solid #3498db;
+                border-radius: 50%;
+                width: 50px;
+                height: 50px;
+            animation: spin 1s linear infinite;
+}
+
+              @keyframes spin {
+                0% { transform: rotate(0deg); }
+                100% { transform: rotate(360deg); }
+              }
+
 
 #studentNDiv{display: flex;
   background-color: rgb(122, 121, 119);

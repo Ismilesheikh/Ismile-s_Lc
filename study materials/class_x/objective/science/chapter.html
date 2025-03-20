@@ -11,6 +11,9 @@
     
 <div id="chTitle">Loading...</div>
     <div class="container" id="container"></div>
+    <div id="loader" class="loader">
+<p></p>
+</div>
 
 <script>
 
@@ -33,6 +36,9 @@
   } catch (error) {
     console.log(error);
   }
+finally {
+document.getElementById('loader').style.display='none';
+}
 }
 
 let container =document.getElementById('container');
