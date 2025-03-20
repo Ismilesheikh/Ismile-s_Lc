@@ -4,6 +4,10 @@ body{
     background: linear-gradient( 180.7deg,  rgb(245, 59, 139) 2.5%, rgba(79,255,255,1) 97.7% );
 }
 
+. container {
+margin:20px;
+}
+
 
 #infoDiv{
   margin-top:40px;
