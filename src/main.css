@@ -8,6 +8,9 @@ body{
 margin:20px;
 }
 
+label{width:20%;}
+input{width:80%}
+
 
 #infoDiv{
   margin-top:40px;
