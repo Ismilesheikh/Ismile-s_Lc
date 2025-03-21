@@ -79,6 +79,7 @@ height: min-content;
   top: 0;
   font-weight: bold;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+border:1px solid dark;
 }
 
 .shareDiv{margin-bottom: 10px;
