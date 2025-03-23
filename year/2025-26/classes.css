@@ -35,8 +35,11 @@ button:hover{border: 2px solid rgb(113, 240, 81);
     margin-top: 10px;
     margin-bottom: 10px;
     margin-left: 10%;
-
+    animation: rot 1s linear infinite;
+    background-image: radial-gradient( circle 1292px at -13.6% 51.7%,  rgb(161, 117, 148) 0%, rgb(19, 194, 89) 51.5%, rgb(66, 76, 218) 88.6% );
 }
+
+@keyframes rot{0%{transform: rotate(0deg);}100%{transform: rotate(360deg);}}
 
 .ctitle{text-align: center;
     justify-content: center;
