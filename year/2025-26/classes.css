@@ -2,23 +2,47 @@
 body{background-color: rgb(243, 239, 237);}
 table{width: 100%;}
 
-tr{width: 100%;}
+
+
+.ctitle{position: sticky;
+    top: 0;
+    background-color: rgb(243, 239, 237);
+    display: flex;
+    justify-content: center;
+    height: 80px;
+    width: 100%;
+    align-items: center;
+    
+border-radius: 20px 40px ;
+box-shadow: 0 0  20px rgb(134, 132, 132);
+font-weight: bold;}
+
+.ctitle p{text-align: center;
+    width:min-content ;
+    color:transparent;  
+    font-size: 40px;
+    background: linear-gradient(to left,red,green,yellow);
+    background-clip: text;}
+
+
+    tr{width: 100%;}
 td{width: 50%;}
 
 .cls_but{box-shadow: 0 0  20px rgb(233, 128, 128);
 border-radius: 20px 20px;
-margin-top: 35px;}
+margin-top: 50px;}
 
 button{width:90%;
     height: 100px;
     margin-left:5%;
     margin-top: 20px;
+    margin-bottom: 5px;
     font-size: 45px;
     color: rgb(240, 237, 238);
     font-style: oblique;
     font-weight: bolder;
     border-radius:80px 15px;
-    box-shadow: 0 0  10px rgb(75, 72, 72);
+    box-shadow: 0 0 20px #706e70;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     background-image: radial-gradient( circle 1292px at -13.6% 51.7%,  rgb(161, 117, 148) 0%, rgb(19, 194, 89) 51.5%, rgb(66, 76, 218) 88.6% );
 }
@@ -40,16 +64,3 @@ button:hover{border: 2px solid rgb(113, 240, 81);
 }
 
 @keyframes rot{0%{transform: rotate(0deg);}100%{transform: rotate(360deg);}}
-
-.ctitle{text-align: center;
-    justify-content: center;
-    font-size: 35px;
-border-radius: 20px 40px ;
-box-shadow: 0 0  20px rgb(248, 133, 133);
-font-weight: bold;}
-
-.ctitle p{width: max-content;
-    margin-left: 40%;
-    color:transparent;
-    background: linear-gradient(to left,red,green,yellow);
-    background-clip: text;}
