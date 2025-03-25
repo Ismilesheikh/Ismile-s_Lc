@@ -154,6 +154,7 @@ border-bottom: 1px solid cornsilk;
         position: sticky;
         top: 0;
         background: linear-gradient( 180.7deg,  rgb(245, 59, 139) 2.5%, rgba(79,255,255,1) 97.7% );
+box-shadow:0 0 10px;
     }
 
     .bigScreen button{ margin-left: 20px;
