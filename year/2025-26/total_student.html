@@ -8,14 +8,67 @@
     <script src="student.js"></script>
 </head>
 <body>
-  <div class="title">Total Students<i class="className">Class-II</i> <i id="studentNumber">Loading</i></div>
-  <div id="studentNDiv">
+  <div class="title">Total Students</div>
+  <div id="student">
   </div>
-    <div id="tablesDiv"></div>
 
         <div id="loader" class="loader">
 <p></p>
 
 </div>
+
+  <style>
+    table {
+      border-collapse: collapse;
+      width: 50%;
+      margin: 10px 0;
+    }
+
+    td, th {
+      border: 1px solid black;
+      padding: 8px;
+      text-align: left;
+    }
+
+  <script>
+    let student = document.getElementById('student');
+
+    function createTable(id, className, data) {
+      const table = document.createElement('table');
+      table.id = id;
+      table.className = className;
+
+      data.forEach((rowData, rowIndex) => {
+        const row = document.createElement('tr');
+        rowData.forEach((cellData, cellIndex) => {
+          const cell = document.createElement('td');
+          cell.id = `${id}_row${rowIndex + 1}_td${cellIndex + 1}`;
+          cell.className = `${id}_td${cellIndex + 1}`;
+          cell.innerText = cellData;
+          row.appendChild(cell);
+        });
+        table.appendChild(row);
+      });
+
+      return table;
+    }
+
+    // Corrected studentData structure
+    const studentData = [];
+
+    let newStudent = { "data1": [["post", "exam"], ["post2", "exam"]] };
+    studentData.push(newStudent);
+
+    studentData.forEach((studentDatas, index) => {
+      let studentDiv = document.createElement('div');
+      student.appendChild(studentDiv);
+
+      // Access the data correctly
+      const data = studentDatas["data1"];
+      const table = createTable("table" + index, "table", data);
+      studentDiv.appendChild(table);
+    });
+
+  </script>
 </body>
 </html>
