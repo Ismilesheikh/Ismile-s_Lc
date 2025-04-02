@@ -1,32 +1,49 @@
 <!DOCTYPE html>
 <html>
 <head>
-      <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ismile</title>
+  <meta charset='utf-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <title>Ismile's LC</title>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+    
     <link rel="stylesheet" href="../../../src/student2025.css">
    
 </head>
 <body>
-  <div class="title">Total Students</div>
+  <div class="title"><p>Total Students</p></div>
   <div id="student">
   </div>
  <div id="loader" class="loader"><p></p></div>
-
+ <footer>@ 2025-26 Ismile Sheikh</footer>
   <style>
+    body{
+      background: linear-gradient(to top,rgb(6, 224, 159),rgb(250, 154, 242));
+    }
     table {
-      border-collapse: collapse;
-      width: 50%;
-      margin: 10px 0;
+      border: 5px solid rgb(8, 224, 240);
+      box-shadow: 0 0 10px;
+      border-radius: 10px;
+      width: 96%;
+      margin-left:2% ;
+      margin-top: 20px;
+      
     }
 
-    td, th {
-      border: 1px solid black;
-      padding: 8px;
-      text-align: left;
+    td,th {
+      border: 1px solid rgb(127, 128, 126);
+      border-radius: 5px;
+      padding: 5px;
+      text-align: center;
+      color: rgb(248, 244, 247);
+      font-weight: bold;
+      box-shadow: 0 0 5px ;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
     }
 
-    
+    footer{text-align: center;
+      margin-top: 50px;
+      font-weight: bold;
+    color: aliceblue;}
 </style>
   <script>
 async function getUsers() {
@@ -83,8 +100,9 @@ getUsers().then(data => {
     let totalStudent=Number(data[6].G1)
 for(i=1;i<=totalStudent;i++){
 newStudent.data1.push([data[i+4].A1, data[i+4].B1, data[i+4].C1, data[i+4].D1, data[i+4].E1, data[i+4].F1]);
-studentData.push(newStudent);
+
 }
+studentData.push(newStudent);
     studentData.forEach((studentDatas, index) => {
       let studentDiv = document.createElement('div');
       student.appendChild(studentDiv);
