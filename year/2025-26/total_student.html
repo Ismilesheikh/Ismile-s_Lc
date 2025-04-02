@@ -11,11 +11,7 @@
   <div class="title">Total Students</div>
   <div id="student">
   </div>
-
-        <div id="loader" class="loader">
-<p></p>
-
-</div>
+ <div id="loader" class="loader"><p></p></div>
 
   <style>
     table {
@@ -29,8 +25,36 @@
       padding: 8px;
       text-align: left;
     }
+
+    
 </style>
   <script>
+async function getUsers() {
+
+try {
+      const response = await fetch(
+        'https://script.google.com/macros/s/AKfycbx_yvslfeyrCoMWPqd9yH2ro-S3X5FPq2DfO-9-72NfVRY4zOSHwmSOltrCHNETov4/exec',
+        {
+          method: 'GET',
+        },
+      );
+  
+      if (!response.ok) {
+        throw new Error(`Error! status: ${response.status}`);
+      }
+  
+      const data = await response.json();
+  
+      return data;
+    } catch (error) {
+      console.log(error);
+    }
+
+finally{
+document.getElementById('loader').style.display='none';}
+}
+getUsers().then(data => {
+
     let student = document.getElementById('student');
 
     function createTable(id, className, data) {
@@ -55,10 +79,12 @@
 
     // Corrected studentData structure
     const studentData = [];
-
-    let newStudent = { "data1": [["post", "exam"], ["post2", "exam"]] };
-    studentData.push(newStudent);
-
+    let newStudent = { data1: []};
+    let totalStudent=Number(data[6].G1)
+for(i=1;i<=totalStudent;i++){
+newStudent.data1.push([data[i+4].A1, data[i+4].B1, data[i+4].C1, data[i+4].D1, data[i+4].E1, data[i+4].F1]);
+studentData.push(newStudent);
+}
     studentData.forEach((studentDatas, index) => {
       let studentDiv = document.createElement('div');
       student.appendChild(studentDiv);
@@ -68,6 +94,10 @@
       const table = createTable("table" + index, "table", data);
       studentDiv.appendChild(table);
     });
+
+  }
+
+);
 
   </script>
 </body>
