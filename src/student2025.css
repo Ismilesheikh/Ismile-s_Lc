@@ -42,6 +42,14 @@ color: rgb(45, 224, 66);}
 .title{box-shadow: 0 0 5px;
   position: sticky;
   top: 0;
+
+}
+
+.title2{box-shadow: 0 0 5px;
+  position: sticky;
+text-align: center;
+font-size:25px;
+font-weight:bold;
 }
 
 .title p{margin-left:2px;
