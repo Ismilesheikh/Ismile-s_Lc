@@ -92,7 +92,7 @@ font-weight:bold;
   overflow-y:none;
 }
 #studentNDiv button{
-  background: linear-gradient(to right,red,yellow,rgb(31, 235, 48));
+  background: linear-gradient(to right,red,rgb(228, 228, 35),rgb(31, 235, 48));
   background-clip: text;
   color: transparent;
   border: 1px solid white;
