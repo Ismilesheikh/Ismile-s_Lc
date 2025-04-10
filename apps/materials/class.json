@@ -7,17 +7,25 @@
 "Class-X"
 ],
      
-"subject": [["English","Hindi","Maths","Science","Social Science"],
-["English","Hindi","Maths","Science","Social Science"],
-["English","Hindi","Maths","Science","Social Science"]
+"subject": [["English","Hindi"],
+["Maths","Science"],
+["Science","Social Science"]
      
 ],
 
+"chapter":[
+[["chapter1","chapter2"],["chapter3"]],
+[["chapter4","chapter5"],["chapter6"]],
+[["chapter7","chapter8"],["chapter9"]]
+
+],
+
 "link":[
-    [""],
-    [""],
-    [""]
-]
+  [["https://www....",""],[""]],
+  [["",""],[""]],
+  [["",""],[""]]
+  
+  ]
 
    
     }
