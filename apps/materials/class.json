@@ -29,6 +29,37 @@
 
    
     }
+
+    {
+      "tabs": "Subjective",
+      "title" :[
+"Class-VIII",
+"Class-IX",
+"Class-X"
+],
+     
+"subject": [["English","Hindi"],
+["Maths","Science"],
+["Science","Social Science"]
+     
+],
+
+"chapter":[
+[["chapter1","chapter2"],["chapter3"]],
+[["chapter4","chapter5"],["chapter6"]],
+[["","","","","","","","8.Chapter","chapter9"],["chapter9"]]
+
+],
+
+"link":[
+  [["https://www....",""],[""]],
+  [["",""],[""]],
+  [["","","","","","","","https://script.google.com/macros/s/AKfycbyujs1_9BWkbFvUmxKcQxQZdhlD13gvqzuO2LfOrTXn2frViyq1qf-Va486qgm7q1w/exec",""],[""]]
+  
+  ]
+
+   
+    }
  
    
   ]
