@@ -4,17 +4,18 @@
       "pic_url": "https://i.ibb.co/nwPY0pM/profile-placeholder.png",
       "details": [
         ["Name", "Ismile Sheikh"],
-        ["Profession", "Computer Science Teacher"],
+        ["Profession", "Teacher & Developer"],
         ["Experience", "5+ years"]
       ],
       "qualification": [
-        ["B.Sc in Computer Science", "XYZ University", "2015"],
-        ["M.Sc in Information Tech", "ABC Institute", "2017"]
+        ["B.Sc in Physics", "S K M University Dumka", "2017"],
+        ["B.Ed in Education", "The University Of Burdwan", "2019"],
+        ["M.Sc in Physics", "S K M University Dumka", "2022"]
       ],
       "others": [
-        ["Email", "ismile@example.com"],
-        ["Phone", "+91 9876543210"],
-        ["Location", "West Bengal, India"]
+        ["Email", "ismileeducation@gmail.com"],
+        ["Phone", "+91 7563876753"],
+        ["Location", "pakur","Jharkhand", "India"]
       ]
     }
   ]
