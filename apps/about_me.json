@@ -1,20 +1,21 @@
 [
-{
-"title":"about me",
-"pic_url":"",
-"details":[
-["Name","Ismile Sheikh"],
-["",""],
-["",""]
-
-
-]
-
-
-}
-
-
-
-
-
-]
+    {
+      "title": "About Me",
+      "pic_url": "https://i.ibb.co/nwPY0pM/profile-placeholder.png",
+      "details": [
+        ["Name", "Ismile Sheikh"],
+        ["Profession", "Computer Science Teacher"],
+        ["Experience", "5+ years"]
+      ],
+      "qualification": [
+        ["B.Sc in Computer Science", "XYZ University", "2015"],
+        ["M.Sc in Information Tech", "ABC Institute", "2017"]
+      ],
+      "others": [
+        ["Email", "ismile@example.com"],
+        ["Phone", "+91 9876543210"],
+        ["Location", "West Bengal, India"]
+      ]
+    }
+  ]
+  
