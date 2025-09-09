@@ -1,0 +1,22 @@
+{
+  "questions": [
+    {
+      "type": "subjective",
+      "text": "Solve for x: \\(2x + 5 = 15\\)"
+    },
+    {
+      "type": "objective",
+      "text": "Which of the following is the derivative of \\(f(x) = e^{2x}\\)?",
+      "options": [
+        "\\(2e^{2x}\\)",
+        "\\(e^{2x}\\)",
+        "\\(2xe^{x}\\)",
+        "\\(x^2e^{2x}\\)"
+      ]
+    },
+    {
+      "type": "subjective",
+      "text": "Evaluate: \\(\\int_0^1 x^2 dx\\)"
+    }
+  ]
+}
