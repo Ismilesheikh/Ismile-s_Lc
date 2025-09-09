@@ -2,7 +2,9 @@
   "questions": [
     {
       "type": "subjective",
-      "text": "Solve for x: \\(2x + 5 = 15\\)"
+      "text": "Solve for x: \\(2x + 5 = 15\\)",
+      "lines": 3,
+      "spaceAfter": 40
     },
     {
       "type": "objective",
@@ -12,11 +14,13 @@
         "\\(e^{2x}\\)",
         "\\(2xe^{x}\\)",
         "\\(x^2e^{2x}\\)"
-      ]
+      ],
+      "spaceAfter": 20
     },
     {
       "type": "subjective",
-      "text": "Evaluate: \\(\\int_0^1 x^2 dx\\)"
+      "text": "Evaluate: \\(\\int_0^1 x^2 dx\\)",
+      "lines": 5
     }
   ]
 }
