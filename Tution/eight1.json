@@ -1,1 +1,16 @@
-io
+{
+  "questions": [
+    {
+      "type": "subjective",
+      "text": "\\(\frac{4}{5}\\) को एक ऐसे परिमेय संख्या के रूप में व्यक्त कीजिए जिसका हर निम्नलिखित हो।/n (a) 30",
+      "lines": 0,
+      "spaceAfter": 40
+    },
+    
+    {
+      "type": "subjective",
+      "text": "",
+      "lines": 0
+    }
+  ]
+}
